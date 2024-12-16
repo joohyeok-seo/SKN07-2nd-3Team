@@ -47,7 +47,7 @@ def main(args):
             score_percentage = score * 100
             energy_bar = st.progress(0)  # 초기값 0으로 설정
             energy_bar.progress(score)  # 받은 점수로 ProgressBar 업데이트
-            st.write(f"예측 점수: {score_percentage:.2f}%")
+            st.write(f"고객 이탈 확률: {score_percentage:.2f}%")
         else:
             st.error(f"파일 전송 실패: {response.status_code}")
 
