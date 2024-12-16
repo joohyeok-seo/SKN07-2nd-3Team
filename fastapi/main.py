@@ -7,7 +7,7 @@ import pandas as pd
 import os
 import shutil
 import io
-
+from models.model import fit
 
 
 app = FastAPI() # 서버 실행 방법: `uvicorn main:app --reload`
@@ -67,6 +67,11 @@ async def create_upload_file(file: UploadFile = File(...)):
  
     full_df = pd.concat(chunks, ignore_index=True)
 
+    fit(
+        df=full_df,
+        y_col='Churn'
+    )
+
     try:
         print(f'[INFO] remove uploaded files: {file_location}')
         os.remove(file_location)
@@ -86,7 +91,7 @@ async def download_image():
  
 @app.get("/test/pdf/")
 async def download_pdf():
-    return FileResponse("./test_pdf.pdf", filename="download_test.pdf", media_type="application/pdf")
+    return FileResponse("./data/classification_report.pdf", filename="download_test.pdf", media_type="application/pdf")
 
 
 '''
