@@ -14,6 +14,13 @@
     <td><img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/baby.jpg" width="175" height="175"></td>
     <td><img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/%EB%8F%99%EC%9D%B5.jpg" width="175" height="175"></td>
   </tr>
+  <tr>
+    <th>KNN Model</th>
+    <th>Decision Tree Model</th>
+    <th>XGBoost Model</th>
+    <th>RNN Model</th>
+    <th>Random Forest Model</th>
+  </tr>
 </table>
 
 ---
