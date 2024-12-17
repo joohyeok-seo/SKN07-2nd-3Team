@@ -25,3 +25,6 @@ uvicorn main:app --reload`
 ```
 streamlit run app.py --ip localhost --port 8000
 ```
+
+#### Tech stack
+**Python**, **scikit-learn**, **Pandas**, **seaborn**, **FastAPI**, **Streamlit**
