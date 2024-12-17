@@ -109,7 +109,20 @@
 - 국제전화 요금제에 가입한 고객의 이탈률이 더 높기 때문에, 요금제의 서비스 품질 개선 또는 고객 불만족 해소를 위한 전략이 필요함
 
 ### 음성사사함 가입비율
-![download](https://github.com/user-attachments/assets/aa216f78-ad8d-4a0b-83d1-7b5d57e456bf)
+<table>
+  <tr>
+    <td align="center"><b>음성사서함 분포</b></td>
+    <td align="center"><b>음성사서함 가입별 Churn 비율</b></td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/aa216f78-ad8d-4a0b-83d1-7b5d57e456bf" alt="Distribution Graph" width="500">
+    </td>
+    <td>
+      <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/voice_mail.png" alt="Churn Rate Graph" width="500">
+    </td>
+  </tr>
+</table>
 - Voice mail plan 미가입 고객의 이탈률이 상대적으로 높음. 음성사서함 요금제가 고객 유지에 기여할 가능성 존재
 
 ### 이탈률
