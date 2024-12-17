@@ -69,9 +69,9 @@
 ## Deep Learning
 ### RNN Model
 1. RNN Model Create
-![ rnn_model_code ](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/rnn_model_create.png)
+   <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/rnn_model_create.png" alt="RNN Model Create" width="600px">
 
-2. Used to Prevent Overfitting
+3. Used to Prevent Overfitting
 ![ prevent_overfitting ](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/early%20stopping.png).
 
 ---
