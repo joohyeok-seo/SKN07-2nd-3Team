@@ -1,3 +1,5 @@
+# 부리부리방법대
+
 ## 팀 소개
 <table>
   <tr>
@@ -25,17 +27,13 @@
 
 ---
 
-## 팀명
-
----
-
 ## 프로젝트 소개<BR>
 고객 이탈률 예측은 고객 경험을 개선하고 경쟁력을 높이는 데 중요한 역할을 합니다. 예측 모델을 통해 고객의 불만이나 불편을 사전에 파악하고 이를 해결함으로써 고객 만족도를 향상시킬 수 있습니다. 또한, 이탈률을 예측함으로써 경쟁사보다 더 나은 서비스를 제공하고, 고객 충성도를 유지하며, 장기적인 성장을 이끌어낼 수 있습니다.<BR>
 우리는 구독 기반 서비스 기업, 전자상거래 기업, 금융 서비스 기업 등 서비스 제공 기업을 위한 **고객 이탈률 예측 모델**을 구축했습니다. 이를 통해 기업은 이탈 대응 전략을 수립하고, 서비스 개선안을 도출하여 더 효율적인 고객 관리와 경쟁력 있는 시장 전략을 마련할 수 있습니다.
-## 프로젝트 명
-### Churn Rate Prediction (?)
 
-## 개요
+## (프로젝트명)
+
+### 개요
 #### 가입 고객 이탈 예측 모델 설계 및 구축
 <br>
 
@@ -49,43 +47,53 @@
 **3. 예측 모델 설계·구축**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;- 채택한 알고리즘으로 ML 모델 설계 및 구축하여 성능 검증<br>
 
-## 프로젝트 목표
-여러 머신러닝 모델의 비교, 분석을 통해 고객 이탈 예측에 가장 적합한 모델을 구축합니다.
-
-
-## EDA
-![스크린샷 2024-12-17 093254](https://github.com/user-attachments/assets/cebe2bc1-0ac4-4122-8d90-08d7bd4e3317)
-
-<table>
-  <tr>
-    <th>1</th>
-    <th>2</th>
-    <th>3</th>
-    <th>4</th>
-  </tr>
-  <tr>
-    <td><img src="![download](https://github.com/user-attachments/assets/2a236dde-bb8f-4588-a3ca-2905af8ac14b)
-" width="175" height="175"></td>
-    <td><img src="![download](https://github.com/user-attachments/assets/c78a73ef-dd2b-4b7b-b5e1-45ad54f39cfb)
-" width="175" height="175"></td>
-    <td><img src="![download](https://github.com/user-attachments/assets/d3ea4ebd-543f-4f32-8337-39203e60c2ae)
-" width="175" height="175"></td>
-    <td><img src="![download](https://github.com/user-attachments/assets/c15c4026-04f9-4d5e-8521-1e6c1c35b03c)
-" width="175" height="175"></td>
-  </tr>
-  <tr>
-    <th>KNN Model</th>
-    <th>Decision Tree Model</th>
-    <th>XGBoost Model</th>
-    <th>RNN Model</th>
-    <th>Random Forest Model</th>
-  </tr>
-</table>
-
+### 목표
+여러 머신러닝 모델의 비교, 분석을 통해 고객 이탈 예측에 가장 적합한 고성능 모델을 구축합니다.
 
 ---
 
 ## 데이터 전처리
+<pre>
+<code>
+columns_to_drop = ['State', 'Area code']
+train_data = train_data.drop(columns=columns_to_drop, axis=1)
+test_data = test_data.drop(columns=columns_to_drop, axis=1)
+</code>
+</pre>
+
+---
+
+## EDA
+### Correlation Matrix
+![download](https://github.com/user-attachments/assets/6f8277cb-c581-465d-b751-56b82aa42e2b)
+
+### 낮통화 이용률
+![download](https://github.com/user-attachments/assets/0506510c-8f6c-4107-ad54-341797303ecf)
+
+### 저녁통화 이용률
+![download](https://github.com/user-attachments/assets/f3801354-610a-4863-8835-173f94369d2d)
+
+### 야간통화 이용률
+![download](https://github.com/user-attachments/assets/986f494c-42d6-4a46-9389-824cc258261a)
+
+### 고객센터 상담 비율
+![download](https://github.com/user-attachments/assets/1dac0981-380d-46f8-b8cc-7872f46c555c)
+
+### 국제전화 가입비율
+![download](https://github.com/user-attachments/assets/1db52c47-3d11-4d62-b159-37f264a24ee5)
+
+### 음성사사함 가입비율
+![download](https://github.com/user-attachments/assets/aa216f78-ad8d-4a0b-83d1-7b5d57e456bf)
+
+### 이탈률
+![download](https://github.com/user-attachments/assets/aa611630-d6a6-473f-8955-8428e40611d2)
+
+### 고개센터 통화량에 따른 이탈률 & 이상치
+![churn_vs_customer_service_calls](https://github.com/user-attachments/assets/e491b51b-ce10-41ea-b632-9ded739fc8e7)
+
+### 통화량이 높은 고객들 대상 이탈률
+![churn_vs_total_day_minutes](https://github.com/user-attachments/assets/9618780c-ebd7-4a49-8a94-511026fcb1cf)
+
 
 ---
 
@@ -94,6 +102,50 @@
 2. Decision Tree Model
 3. XGBoost Model
 4. Random Forest Model
+
+### Evaluation Metrics by Model
+<table>
+  <tr>
+    <th>Model</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 Score</th>
+    <th>ROC AUC</th>
+  </tr>
+  <tr>
+    <th>KNN</th>
+    <th>0.885</th>
+    <th>0.828</th>
+    <th>0.304</th>
+    <th>0.444</th>
+    <th>0.646</th>
+  </tr>
+  <tr>
+    <th>Disition Tree</th>
+    <th>0.913</th>
+    <th>0.680</th>
+    <th>0.737</th>
+    <th>0.707</th>
+    <th>0.840</th>
+  </tr>
+  <tr>
+    <th>XGBoost</th>
+    <th>0.957</th>
+    <th>0.934</th>
+    <th>0.747</th>
+    <th>0.830</th>
+    <th>0.911</th>
+  </tr>
+  <tr>
+    <th>Random Forest</th>
+    <th>0.958</th>
+    <th>0.972</th>
+    <th>0.737</th>
+    <th>0.838</th>
+    <th>0.924</th>
+  </tr>
+</table>
 
 ---
 
