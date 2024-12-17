@@ -88,6 +88,13 @@ test_data = test_data.drop(columns=columns_to_drop, axis=1)
 ### 이탈률
 ![download](https://github.com/user-attachments/assets/aa611630-d6a6-473f-8955-8428e40611d2)
 
+## 고개센터 통화량에 따른 이탈률 & 이상치
+![churn_vs_customer_service_calls](https://github.com/user-attachments/assets/e491b51b-ce10-41ea-b632-9ded739fc8e7)
+
+## 통화량이 높은 고객들 대상 이탈률
+![churn_vs_total_day_minutes](https://github.com/user-attachments/assets/9618780c-ebd7-4a49-8a94-511026fcb1cf)
+
+
 ---
 
 ## Machine Learning
