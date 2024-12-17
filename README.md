@@ -49,6 +49,15 @@
 
 ---
 
+## EDA
+![스크린샷 2024-12-17 093254](https://github.com/user-attachments/assets/cebe2bc1-0ac4-4122-8d90-08d7bd4e3317)
+
+---
+
+## 데이터 전처리
+
+---
+
 ## Machine Learning
 1. KNN Model
 2. Decision Tree Model
