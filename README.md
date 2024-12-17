@@ -72,7 +72,7 @@
 ## Deep Learning
 ### RNN Model
 1. RNN Model Create
-   <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/rnn_model_create.png" alt="RNN Model Create" width="900px">
+   <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/rnn_model_create.png" alt="rnn_model_create" width="900px">
 
 2. Used to Prevent Overfitting
 ![ prevent_overfitting ](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/early%20stopping.png)
@@ -81,7 +81,7 @@
 ![ training_result ](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/training_result.png)
 
 3. Loss Curve
-![ loss_curve ](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/RNN_model_loss.png)
+   <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/RNN_model_loss.png" alt="loss_curve" width="900px">
 
 ---
 
