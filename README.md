@@ -110,10 +110,10 @@ test_data = test_data.drop(columns=columns_to_drop, axis=1)
   <tr>
     <th>KNN</th>
     <th>0.885</th>
-    <th>0</th>
-    <th>0</th>
-    <th>0</th>
-    <th>0</th>
+    <th>0.828</th>
+    <th>0.304</th>
+    <th>0.444</th>
+    <th>0.646</th>
   </tr>
   <tr>
     <th>Decision Tree</th>
