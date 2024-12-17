@@ -50,7 +50,7 @@
 ---
 
 ## EDA
-![스크린샷 2024-12-17 093254](https://github.com/user-attachments/assets/cebe2bc1-0ac4-4122-8d90-08d7bd4e3317)
+![download](https://github.com/user-attachments/assets/6cb6f933-b5db-4814-9271-b11e69d90055)
 
 ---
 
@@ -62,6 +62,12 @@
 ![download](https://github.com/user-attachments/assets/dad14400-26d4-426c-aaa7-869bdef21222)
 
 ![download](https://github.com/user-attachments/assets/b6c3226a-087e-4939-a284-c6daca371180)
+
+![download](https://github.com/user-attachments/assets/c8945a91-65ad-4a1a-94ba-d1d26e4c7b67)
+
+![download](https://github.com/user-attachments/assets/047f9f87-d20f-4d4e-bdda-b0af286eb6ed)
+
+![download](https://github.com/user-attachments/assets/81c79777-36c6-431f-91ae-780475b56aa3)
 
 ---
 
