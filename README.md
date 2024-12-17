@@ -150,21 +150,19 @@ test_data = test_data.drop(columns=columns_to_drop, axis=1)
 ### 최종 모델 선정 과정
 이번 프로젝트에서는 XGBoost와 Random Forest 모델이 가장 높은 성능을 보였습니다. 각 모델의 주요 성능 지표를 비교한 결과 다음과 같은 결론을 도출했습니다.
 
-**Random Forest**
-Accuracy: 95.8%
-Precision: 97.2%
-Recall: 73.7%
-F1 Score: 83.8%
-ROC-AUC: 92.4%
-Random Forest는 Precision에서 가장 높은 성능을 보였으나, Recall이 상대적으로 낮아 이탈 고객을 놓칠 가능성이 있었습니다.
+- Random Forest는 Precision에서 가장 높은 성능을 보였으나, Recall이 상대적으로 낮아 이탈 고객을 놓칠 가능성이 있었습니다.
 
-**XGBoost**
-Accuracy: 95.7%
-Precision: 93.4%
-Recall: 74.7%
-F1 Score: 83.0%
-ROC-AUC: 91.1%
-XGBoost는 Recall과 F1 Score에서 더 균형 잡힌 성능을 보였습니다. 특히 Recall이 Random Forest보다 높아 이탈 고객을 더 많이 예측하는 강점을 보였습니다.
+- XGBoost는 Recall과 F1 Score에서 더 균형 잡힌 성능을 보였습니다. 특히 Recall이 Random Forest보다 높아 이탈 고객을 더 많이 예측하는 강점을 보였습니다.
+
+### 최종 모델 선정 (XGBoost 선택)
+1. 균형 잡힌 성능
+- Recall이 Random Forest보다 높아 이탈 고객을 더 많이 예측할 수 있습니다.
+- F1 Score도 높은 수준을 유지하며 정확도와 재현율 간 균형을 이룹니다.
+2. 과적합 방지
+- Random Forest는 Precision은 높았지만 과적합 경향이 보였습니다.
+- XGBoost는 안정적이면서도 일반화 성능이 뛰어났습니다.
+3. 해석 가능성
+- XGBoost를 통해 Feature Importance를 분석하면 이탈 요인을 명확히 파악할 수 있습니다.
 
 ---
 
