@@ -72,6 +72,7 @@
 
 ### 야간통화 이용률
 ![download](https://github.com/user-attachments/assets/986f494c-42d6-4a46-9389-824cc258261a)
+- 야간 시간(Total night minutes)의 통화량은 고객 이탈과의 상관관계가 미미함
 
 ### 고객센터 상담 비율
 ![download](https://github.com/user-attachments/assets/1dac0981-380d-46f8-b8cc-7872f46c555c)
