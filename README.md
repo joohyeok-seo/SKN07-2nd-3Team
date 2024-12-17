@@ -89,6 +89,7 @@
 
 3. Training Result
 ![ training_result ](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/training_result.png).
+- Training during 34 epoch
 
 ---
 
