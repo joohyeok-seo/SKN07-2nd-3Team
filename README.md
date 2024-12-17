@@ -1,4 +1,4 @@
-# 부리부리방법대
+# 부리부리방범대
 
 ## 팀 소개
 <table>
@@ -52,7 +52,92 @@
 
 ---
 
-## 데이터 전처리
+## 주요 데이터 설명
+<table> <tr> <th>Number</th> <th>Column</th> <th>Meaning</th> <th>Example</th> </tr> <tr> <th>1</th> <th>State</th> <th>고객이 거주하는 주</th> <th>CA" (California), "NY" (New York)</th> </tr> <tr> <th>2</th> <th>International plan</th> <th>국제 전화 요금제 가입 여부</th> <th>"Yes" (가입), "No" (미가입)</th> </tr> <tr> <th>3</th> <th>Voice mail plan</th> <th>음성사서함 요금제 가입 여부</th> <th>"Yes" (가입), "No" (미가입)</th> </tr> <tr> <th>4</th> <th>Total day minutes</th> <th>주간(낮 시간) 동안 사용한 총 통화 시간(분)</th> <th>265.1 → 265.1분 통화</th> </tr> <tr> <th>5</th> <th>Total eve minutes</th> <th>저녁 시간 동안 사용한 총 통화 시간(분)</th> <th>197.4 → 197.4분 통화</th> </tr> <tr> <th>6</th> <th>Total intl minutes</th> <th>국제 통화에 사용된 총 시간(분)</th> <th>10.0 → 10분 사용</th> </tr> <tr> <th>7</th> <th>Customer service calls</th> <th>고객 센터에 전화한 횟수</th> <th>1 → 1회 전화</th> </tr> <tr> <th>8</th> <th>Churn</th> <th>고객 이탈 여부</th> <th>True (이탈), False (유지)</th> </tr> </table>
+
+---
+
+## EDA
+### Correlation Matrix
+![download](https://github.com/user-attachments/assets/6f8277cb-c581-465d-b751-56b82aa42e2b)
+- Total day minutes, Customer service calls 등과 Churn 간의 상관관계가 두드러지게 나타남. 주간 통화 시간이 길수록 이탈률이 높아지는 패턴이 확인됨
+
+### 낮 통화 이용률
+![download](https://github.com/user-attachments/assets/0506510c-8f6c-4107-ad54-341797303ecf)
+- 낮 시간(Total day minutes) 동안 통화 시간이 많은 고객의 이탈률이 상대적으로 높게 나타남. 이는 통화량이 많을수록 불만족 요인이 발생할 가능성이 있음
+
+### 저녁통화 이용률
+![download](https://github.com/user-attachments/assets/f3801354-610a-4863-8835-173f94369d2d)
+- 저녁 시간(Total eve minutes) 동안의 통화량은 이탈률과 상대적으로 낮은 상관관계를 보임
+
+### 야간통화 이용률
+![download](https://github.com/user-attachments/assets/986f494c-42d6-4a46-9389-824cc258261a)
+- 야간 시간(Total night minutes)의 통화량은 고객 이탈과의 상관관계가 미미함
+
+### 고객센터 상담 비율
+<table>
+  <tr>
+    <td align="center"><b>Distribution of Customer Service Calls</b></td>
+    <td align="center"><b>Customer Service Calls별 Churn 비율</b></td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/1dac0981-380d-46f8-b8cc-7872f46c555c" alt="Distribution Graph" width="600">
+    </td>
+    <td>
+      <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/curstomer_service_calls.png" alt="Churn Rate Graph" width="400">
+    </td>
+  </tr>
+</table>
+- Customer service calls 횟수가 증가할수록 이탈 확률이 급격히 높아짐. 이는 고객 불만족과 문제 해결의 어려움을 반영함
+
+### 국제전화 가입비율
+<table>
+  <tr>
+    <td align="center"><b>국제전화 분포</b></td>
+    <td align="center"><b>국제전화 가입별 Churn 비율</b></td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/1db52c47-3d11-4d62-b159-37f264a24ee5" alt="Distribution Graph" width="500">
+    </td>
+    <td>
+      <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/Subscribed.png" alt="Churn Rate Graph" width="500">
+    </td>
+  </tr>
+</table>
+- 국제전화 요금제에 가입한 고객의 이탈률이 더 높기 때문에, 요금제의 서비스 품질 개선 또는 고객 불만족 해소를 위한 전략이 필요함
+
+### 음성사사함 가입비율
+<table>
+  <tr>
+    <td align="center"><b>음성사서함 분포</b></td>
+    <td align="center"><b>음성사서함 가입별 Churn 비율</b></td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/aa216f78-ad8d-4a0b-83d1-7b5d57e456bf" alt="Distribution Graph" width="500">
+    </td>
+    <td>
+      <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/voice_mail.png" alt="Churn Rate Graph" width="500">
+    </td>
+  </tr>
+</table>
+- Voice mail plan 미가입 고객의 이탈률이 상대적으로 높음. 음성사서함 요금제가 고객 유지에 기여할 가능성 존재
+
+### 이탈률
+![download](https://github.com/user-attachments/assets/aa611630-d6a6-473f-8955-8428e40611d2)
+- 전체 고객 중 이탈 고객의 비율이 낮지만, 특정 조건(높은 통화량, 고객센터 이용량)에서 집중적으로 이탈이 발생함
+
+### 고개센터 통화량에 따른 이탈률 & 이상치
+![churn_vs_customer_service_calls](https://github.com/user-attachments/assets/e491b51b-ce10-41ea-b632-9ded739fc8e7)
+- 고객센터에 5회 이상 전화를 한 고객은 이탈률이 현저히 높음. 이는 서비스 불만족이 주요 원인임을 나타냄
+
+### 통화량이 높은 고객들 대상 이탈률
+![churn_vs_total_day_minutes](https://github.com/user-attachments/assets/9618780c-ebd7-4a49-8a94-511026fcb1cf)
+- 통화량이 비정상적으로 높은 고객군에서 이탈률이 급격히 상승함. 이러한 고객은 별도의 관리가 필요함
+
+### 데이터 전처리
 <pre>
 <code>
 columns_to_drop = ['State', 'Area code']
@@ -60,40 +145,6 @@ train_data = train_data.drop(columns=columns_to_drop, axis=1)
 test_data = test_data.drop(columns=columns_to_drop, axis=1)
 </code>
 </pre>
-
----
-
-## EDA
-### Correlation Matrix
-![download](https://github.com/user-attachments/assets/6f8277cb-c581-465d-b751-56b82aa42e2b)
-
-### 낮통화 이용률
-![download](https://github.com/user-attachments/assets/0506510c-8f6c-4107-ad54-341797303ecf)
-
-### 저녁통화 이용률
-![download](https://github.com/user-attachments/assets/f3801354-610a-4863-8835-173f94369d2d)
-
-### 야간통화 이용률
-![download](https://github.com/user-attachments/assets/986f494c-42d6-4a46-9389-824cc258261a)
-
-### 고객센터 상담 비율
-![download](https://github.com/user-attachments/assets/1dac0981-380d-46f8-b8cc-7872f46c555c)
-
-### 국제전화 가입비율
-![download](https://github.com/user-attachments/assets/1db52c47-3d11-4d62-b159-37f264a24ee5)
-
-### 음성사사함 가입비율
-![download](https://github.com/user-attachments/assets/aa216f78-ad8d-4a0b-83d1-7b5d57e456bf)
-
-### 이탈률
-![download](https://github.com/user-attachments/assets/aa611630-d6a6-473f-8955-8428e40611d2)
-
-### 고개센터 통화량에 따른 이탈률 & 이상치
-![churn_vs_customer_service_calls](https://github.com/user-attachments/assets/e491b51b-ce10-41ea-b632-9ded739fc8e7)
-
-### 통화량이 높은 고객들 대상 이탈률
-![churn_vs_total_day_minutes](https://github.com/user-attachments/assets/9618780c-ebd7-4a49-8a94-511026fcb1cf)
-
 
 ---
 
@@ -147,6 +198,23 @@ test_data = test_data.drop(columns=columns_to_drop, axis=1)
   </tr>
 </table>
 
+### 최종 모델 선정 과정
+이번 프로젝트에서는 XGBoost와 Random Forest 모델이 가장 높은 성능을 보였습니다. 각 모델의 주요 성능 지표를 비교한 결과 다음과 같은 결론을 도출했습니다.
+
+- Random Forest는 Precision에서 가장 높은 성능을 보였으나, Recall이 상대적으로 낮아 이탈 고객을 놓칠 가능성이 있었습니다.
+
+- XGBoost는 Recall과 F1 Score에서 더 균형 잡힌 성능을 보였습니다. 특히 Recall이 Random Forest보다 높아 이탈 고객을 더 많이 예측하는 강점을 보였습니다.
+
+### 최종 모델 선정 (XGBoost 선택)
+1. 균형 잡힌 성능
+- Recall이 Random Forest보다 높아 이탈 고객을 더 많이 예측할 수 있습니다.
+- F1 Score도 높은 수준을 유지하며 정확도와 재현율 간 균형을 이룹니다.
+2. 과적합 방지
+- Random Forest는 Precision은 높았지만 과적합 경향이 보였습니다.
+- XGBoost는 안정적이면서도 일반화 성능이 뛰어났습니다.
+3. 해석 가능성
+- XGBoost를 통해 Feature Importance를 분석하면 이탈 요인을 명확히 파악할 수 있습니다.
+
 ---
 
 ## Deep Learning
@@ -169,7 +237,23 @@ test_data = test_data.drop(columns=columns_to_drop, axis=1)
 
 6. Evaluation
    <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/RNN_model_evaluation.png" alt="rnn_model_evaluation" width="1100px">
-   
+
+### RNN 모델의 한계
+1. 성능 부족
+- 정확도(Accuracy)가 88.9%로 나쁘지 않지만, Recall이 43.2%로 매우 낮습니다.
+- 이는 이탈 고객을 제대로 예측하지 못하는 한계가 있음을 의미합니다.
+2. F1 Score
+- F1 Score가 0.526으로 낮아 Precision과 Recall의 균형이 부족합니다.
+3. ROC-AUC
+- ROC-AUC 점수가 0.698로, 다른 머신러닝 모델(XGBoost, Random Forest)에 비해 식별 능력이 떨어집니다.
+
+### XGBoost와의 비교
+- XGBoost는 모든 성능 지표에서 RNN보다 우수한 결과를 보였습니다.
+- 특히 Recall과 ROC-AUC에서 큰 차이를 보이며, 이탈 고객 예측에 더 효과적입니다.
+
+RNN은 딥러닝 모델로 적용되었지만, 성능과 효율성 면에서 부족했습니다.
+따라서 XGBoost가 최종 모델로 선정되었습니다.
+
 ---
 
 ## 기술 스택
