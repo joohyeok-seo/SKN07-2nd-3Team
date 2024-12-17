@@ -27,6 +27,22 @@ def allowed_file(filename: str):
 async def get_models():
     return available_models
 
+@app.post("/uploadfile/single", )
+async def predict_single(input_data, model: str = Form(...)):
+
+    result = predict(
+        df=pd.DataFrame([input_data]),
+        model_name=model
+    )
+    # result = {
+    #         'ratio' : np.mean(model.predict_proba(x)),
+    #         'prob' : np.mean(model.predict(x)),
+    #         'total' : df.shape
+    #     }
+
+    return JSONResponse(content=result)
+
+
 @app.post("/uploadfile/predict")
 async def create_upload_file(file: UploadFile = File(...), model: str = Form(...)):
     if not allowed_file(file.filename):
@@ -73,6 +89,8 @@ async def create_upload_file(file: UploadFile = File(...), model: str = Form(...
         df=full_df,
         model_name=model
     )
+    print(result)
+
 
     try:
         print(f'[INFO] remove uploaded files: {file_location}')

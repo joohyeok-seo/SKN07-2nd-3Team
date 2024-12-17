@@ -8,6 +8,10 @@ run `pip install -r requirements.txt`
 - K-Neighbors Classifier
 - Decision Tree Classifier
 - Random Forest Classifier
+- Logistic Regression
+- XGB Classifier
+- Bagging Classifier
+- Gradient Boosting Classifier
 
 ### Getting Started
 

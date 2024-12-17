@@ -83,10 +83,19 @@ def predict(df, model_name: str = 'K-Neighbors Classifier'):
         model_dict = pickle.load(f)
     model = model_dict['model']
     
-    result = {
-        'ratio' : np.mean(model.predict_proba(x)[:, 1] >= 0.5),
-        'total' : df.shape
-    }
+    if rNAMES[model_name] not in no_cv_socres:
+        result = {
+            'ratio' : np.mean(model.predict_proba(x)[:, 1]),
+            'prob' : np.mean(model.predict(x)),
+            'total' : df.shape
+        }
+        print(result)
+    else:
+        result = {
+            'ratio' : np.mean(model.predict_proba(x)),
+            'prob' : np.mean(model.predict(x)),
+            'total' : df.shape
+        }
 
     return result
 
