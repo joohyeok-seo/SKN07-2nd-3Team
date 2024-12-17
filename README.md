@@ -63,15 +63,15 @@
 ![download](https://github.com/user-attachments/assets/6f8277cb-c581-465d-b751-56b82aa42e2b)
 - Total day minutes, Customer service calls 등과 Churn 간의 상관관계가 두드러지게 나타남. 주간 통화 시간이 길수록 이탈률이 높아지는 패턴이 확인됨
 
-### 낮 통화 이용률
+### 주간 통화 이용률
 ![download](https://github.com/user-attachments/assets/0506510c-8f6c-4107-ad54-341797303ecf)
 - 낮 시간(Total day minutes) 동안 통화 시간이 많은 고객의 이탈률이 상대적으로 높게 나타남. 이는 통화량이 많을수록 불만족 요인이 발생할 가능성이 있음
 
-### 저녁통화 이용률
+### 야간 통화 이용률
 ![download](https://github.com/user-attachments/assets/f3801354-610a-4863-8835-173f94369d2d)
 - 저녁 시간(Total eve minutes) 동안의 통화량은 이탈률과 상대적으로 낮은 상관관계를 보임
 
-### 야간통화 이용률
+### 심야 통화 이용률
 ![download](https://github.com/user-attachments/assets/986f494c-42d6-4a46-9389-824cc258261a)
 - 야간 시간(Total night minutes)의 통화량은 고객 이탈과의 상관관계가 미미함
 
