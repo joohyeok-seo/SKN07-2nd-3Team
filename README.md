@@ -261,9 +261,22 @@ RNN은 딥러닝 모델로 적용되었지만, 성능과 효율성 면에서 부
 
 ---
 
+## 이탈 예측 모델 구현
+사용자는 다양한 머신러닝 모델을 선택하고, CSV 파일을 업로드하여 이탈 예측 결과를 확인할 수 있습니다.
+
+### 프로젝트 실행 과정
+1. CSV 파일 업로드
+- 예측할 데이터셋을 업로드 합니다.
+2. 모델 선택
+- 사용자는 Disition Tree, Random Forest, XGBoost 등 다양한 모델 중 하나를 선택할 수 있습니다.
+3. 이탈 예측 결과 확인
+- 예측된 고객 이탈률과 이탈 예상 고객 수를 확인할 수 있습니다.
+
 <table> 
-  <tr> <td align="center"><b>모델 선택</b></td> <td align="center"><b>CSV 파일 업로드</b></td> <td align="center"><b>이탈 예측 결과</b></td> </tr> <tr> <td> <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/streamlit%2001.png" alt="Model Selection" width="300"> </td> <td> <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/streamlit%2002.png" alt="CSV File Upload" width="300"> </td> <td> <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/streamlit%2003.png" alt="Churn Prediction Results" width="300"> </td> </tr> 
+  <tr> <td align="center"><b>CSV 파일 업로드</b></td> <td align="center"><b>모델 선택</b></td> <td align="center"><b>이탈 예측 결과</b></td> </tr> <tr> <td> <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/streamlit%2001.png" alt="Model Selection" width="300"> </td> <td> <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/streamlit%2002.png" alt="CSV File Upload" width="300"> </td> <td> <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/streamlit%2003.png" alt="Churn Prediction Results" width="300"> </td> </tr> 
 </table>
+
+--- 
 
 ## 한 줄 회고
 - 김나예:
