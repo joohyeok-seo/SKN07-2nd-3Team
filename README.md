@@ -63,7 +63,7 @@
 - Total day minutes, Customer service calls 등과 Churn 간의 상관관계가 두드러지게 나타남. 주간 통화 시간이 길수록 이탈률이 높아지는 패턴이 확인됨
 
 ### 낮 통화 이용률
-![download](https://github.com/user-attachments/assets/0506510c-8f6c-4107-ad54-341797303ecf)
+![download](https://github.com/user-attachments/assets/0506510c-8f6c-4107-ad54-341797303ecf)//
              낮동안 통화 이용률에 따른 이탈률 예측값을 나타낸 정규화분포
 
 ### 저녁통화 이용률
