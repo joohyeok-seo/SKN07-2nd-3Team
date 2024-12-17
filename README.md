@@ -64,7 +64,7 @@
 
 ### 낮 통화 이용률
 ![download](https://github.com/user-attachments/assets/0506510c-8f6c-4107-ad54-341797303ecf)
-낮동안 통화 이용률에 따른 이탈률 예측값을 나타낸 정규화분포
+             낮동안 통화 이용률에 따른 이탈률 예측값을 나타낸 정규화분포
 
 ### 저녁통화 이용률
 ![download](https://github.com/user-attachments/assets/f3801354-610a-4863-8835-173f94369d2d)
