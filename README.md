@@ -52,6 +52,30 @@
 
 ---
 
+## 데이터 설명
+<table>
+  <tr>
+    <th>Number</th>
+    <th>Column</th>
+    <th>Meaning</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <th>1</th>
+    <th>State</th>
+    <th>고객이 거주하는 주</th>
+    <th>CA" (California), "NY" (New York)</th>
+  </tr>
+  <tr>
+    <th>2</th>
+    <th>Account length</th>
+    <th>고객의 계정이 활성화된 기간(일 단위)</th>
+    <th>128 → 계정이 128일 동안 활성 상태</th>
+  </tr>
+</table>
+
+---
+
 ## EDA
 ### Correlation Matrix
 ![download](https://github.com/user-attachments/assets/6f8277cb-c581-465d-b751-56b82aa42e2b)
