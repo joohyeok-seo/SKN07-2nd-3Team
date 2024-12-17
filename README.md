@@ -186,7 +186,23 @@ test_data = test_data.drop(columns=columns_to_drop, axis=1)
 
 6. Evaluation
    <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/RNN_model_evaluation.png" alt="rnn_model_evaluation" width="1100px">
-   
+
+### RNN 모델의 한계
+1. 성능 부족
+- 정확도(Accuracy)가 88.9%로 나쁘지 않지만, Recall이 43.2%로 매우 낮습니다.
+- 이는 이탈 고객을 제대로 예측하지 못하는 한계가 있음을 의미합니다.
+2. F1 Score
+- F1 Score가 0.526으로 낮아 Precision과 Recall의 균형이 부족합니다.
+3. ROC-AUC
+- ROC-AUC 점수가 0.698로, 다른 머신러닝 모델(XGBoost, Random Forest)에 비해 식별 능력이 떨어집니다.
+
+### XGBoost와의 비교
+- XGBoost는 모든 성능 지표에서 RNN보다 우수한 결과를 보였습니다.
+- 특히 Recall과 ROC-AUC에서 큰 차이를 보이며, 이탈 고객 예측에 더 효과적입니다.
+
+RNN은 딥러닝 모델로 적용되었지만, 성능과 효율성 면에서 부족했습니다.
+따라서 XGBoost가 최종 모델로 선정되었습니다.
+
 ---
 
 ## 기술 스택
