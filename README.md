@@ -65,6 +65,7 @@
 ### 낮 통화 이용률
 ![download](https://github.com/user-attachments/assets/0506510c-8f6c-4107-ad54-341797303ecf)//
              낮동안 통화 이용률에 따른 이탈률 예측값을 나타낸 정규화분포
+- 낮 시간(Total day minutes) 동안 통화 시간이 많은 고객의 이탈률이 상대적으로 높게 나타남. 이는 통화량이 많을수록 불만족 요인이 발생할 가능성이 있음을 시사.
 
 ### 저녁통화 이용률
 ![download](https://github.com/user-attachments/assets/f3801354-610a-4863-8835-173f94369d2d)
