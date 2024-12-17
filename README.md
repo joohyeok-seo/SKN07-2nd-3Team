@@ -53,7 +53,7 @@
 여러 머신러닝 모델의 비교, 분석을 통해 고객 이탈 예측에 가장 적합한 고성능 모델을 구축합니다.
 
 
-## EDA
+### EDA
 ![스크린샷 2024-12-17 093254](https://github.com/user-attachments/assets/cebe2bc1-0ac4-4122-8d90-08d7bd4e3317)
 
 
