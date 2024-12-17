@@ -55,6 +55,21 @@
 ## EDA
 ![스크린샷 2024-12-17 093254](https://github.com/user-attachments/assets/cebe2bc1-0ac4-4122-8d90-08d7bd4e3317)
 
+<!-- GitHub README.md -->
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="![download](https://github.com/user-attachments/assets/52425966-6fe2-40ff-85b6-7c3e6d76076b)
+" alt="이미지1 설명" style="width: 24%;">
+ <div style="display: flex; justify-content: space-between;">
+  <img src="![download](https://github.com/user-attachments/assets/ba3cd66e-9b57-4a58-8ad6-3a667afb7143)
+" alt="이미지1 설명" style="width: 24%;">
+  <img src="![download](https://github.com/user-attachments/assets/eb8a6130-2cd6-480c-b19d-95bdbfa4b2f2)
+" alt="이미지3 설명" style="width: 24%;">
+  <img src="![download](https://github.com/user-attachments/assets/8b626f91-6c76-4aad-98eb-c5366a7302cd)
+" alt="이미지4 설명" style="width: 24%;">
+</div>
+
+
 ---
 
 ## 데이터 전처리
