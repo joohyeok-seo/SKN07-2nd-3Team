@@ -133,11 +133,11 @@ test_data = test_data.drop(columns=columns_to_drop, axis=1)
   </tr>
   <tr>
     <th>Random Forest</th>
-    <th>0.952</th>
-    <th>0</th>
-    <th>0</th>
-    <th>0</th>
-    <th>0</th>
+    <th>0.958</th>
+    <th>0.972</th>
+    <th>0.737</th>
+    <th>0.838</th>
+    <th>0.924</th>
   </tr>
 </table>
 
