@@ -90,6 +90,49 @@ test_data = test_data.drop(columns=columns_to_drop, axis=1)
 3. XGBoost Model
 4. Random Forest Model
 
+<table>
+  <tr>
+    <th>Model</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 Score</th>
+    <th>ROC AUC</th>
+  </tr>
+  <tr>
+    <th>KNN</th>
+    <th>0</th>
+    <th>0</th>
+    <th>0</th>
+    <th>0</th>
+    <th>0</th>
+  </tr>
+  <tr>
+    <th>Decision Tree</th>
+    <th>0</th>
+    <th>0</th>
+    <th>0</th>
+    <th>0</th>
+    <th>0</th>
+  </tr>
+  <tr>
+    <th>XGBoost</th>
+    <th>0</th>
+    <th>0</th>
+    <th>0</th>
+    <th>0</th>
+    <th>0</th>
+  </tr>
+  <tr>
+    <th>Random Forest</th>
+    <th>0</th>
+    <th>0</th>
+    <th>0</th>
+    <th>0</th>
+    <th>0</th>
+  </tr>
+</table>
+
 ---
 
 ## Deep Learning
