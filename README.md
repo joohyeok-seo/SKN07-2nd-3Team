@@ -60,6 +60,7 @@
 ## Deep Learning
 ### RNN Model
 1. RNN Model Create
+![ rnn_model_code ](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/rnn_model_create.png)
 
 ---
 
