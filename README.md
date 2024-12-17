@@ -56,36 +56,28 @@
 ## EDA
 ![스크린샷 2024-12-17 093254](https://github.com/user-attachments/assets/cebe2bc1-0ac4-4122-8d90-08d7bd4e3317)
 
-<table>
-  <tr>
-    <th>1</th>
-    <th>2</th>
-    <th>3</th>
-    <th>4</th>
-  </tr>
-  <tr>
-    <td><img src="![download](https://github.com/user-attachments/assets/2a236dde-bb8f-4588-a3ca-2905af8ac14b)
-" width="175" height="175"></td>
-    <td><img src="![download](https://github.com/user-attachments/assets/c78a73ef-dd2b-4b7b-b5e1-45ad54f39cfb)
-" width="175" height="175"></td>
-    <td><img src="![download](https://github.com/user-attachments/assets/d3ea4ebd-543f-4f32-8337-39203e60c2ae)
-" width="175" height="175"></td>
-    <td><img src="![download](https://github.com/user-attachments/assets/c15c4026-04f9-4d5e-8521-1e6c1c35b03c)
-" width="175" height="175"></td>
-  </tr>
-  <tr>
-    <th>KNN Model</th>
-    <th>Decision Tree Model</th>
-    <th>XGBoost Model</th>
-    <th>RNN Model</th>
-    <th>Random Forest Model</th>
-  </tr>
-</table>
+![download](https://github.com/user-attachments/assets/0506510c-8f6c-4107-ad54-341797303ecf)
+
+![download](https://github.com/user-attachments/assets/f3801354-610a-4863-8835-173f94369d2d)
+
+![download](https://github.com/user-attachments/assets/986f494c-42d6-4a46-9389-824cc258261a)
+
+![download](https://github.com/user-attachments/assets/1dac0981-380d-46f8-b8cc-7872f46c555c)
 
 
 ---
 
 ## 데이터 전처리
+<pre>
+<code>
+ {
+columns_to_drop = ['State', 'Area code']
+train_data = train_data.drop(columns=columns_to_drop, axis=1)
+test_data = test_data.drop(columns=columns_to_drop, axis=1)
+}
+</code>
+</pre>
+
 
 ---
 
