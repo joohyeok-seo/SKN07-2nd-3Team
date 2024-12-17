@@ -76,7 +76,7 @@
 # 음성사사함 가입비율
 ![download](https://github.com/user-attachments/assets/aa216f78-ad8d-4a0b-83d1-7b5d57e456bf)
 
-# 이탈
+# 이탈률
 ![download](https://github.com/user-attachments/assets/aa611630-d6a6-473f-8955-8428e40611d2)
 
 
