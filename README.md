@@ -49,6 +49,19 @@
 
 ---
 
+## Machine Learning
+1. KNN Model
+2. Decision Tree Model
+3. XGBoost Model
+4. Random Forest Model
+
+---
+
+## Deep Learning
+### RNN Model
+
+---
+
 ## 기술 스택
 
 ---
