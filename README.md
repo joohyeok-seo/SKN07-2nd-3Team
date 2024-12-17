@@ -58,12 +58,29 @@
 
 <table>
   <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
   </tr>
-<tr>
+  <tr>
+    <td><img src="![download](https://github.com/user-attachments/assets/2a236dde-bb8f-4588-a3ca-2905af8ac14b)
+" width="175" height="175"></td>
+    <td><img src="![download](https://github.com/user-attachments/assets/c78a73ef-dd2b-4b7b-b5e1-45ad54f39cfb)
+" width="175" height="175"></td>
+    <td><img src="![download](https://github.com/user-attachments/assets/d3ea4ebd-543f-4f32-8337-39203e60c2ae)
+" width="175" height="175"></td>
+    <td><img src="![download](https://github.com/user-attachments/assets/c15c4026-04f9-4d5e-8521-1e6c1c35b03c)
+" width="175" height="175"></td>
+  </tr>
+  <tr>
+    <th>KNN Model</th>
+    <th>Decision Tree Model</th>
+    <th>XGBoost Model</th>
+    <th>RNN Model</th>
+    <th>Random Forest Model</th>
+  </tr>
+</table>
 
 
 ---
