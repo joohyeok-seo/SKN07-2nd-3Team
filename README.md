@@ -76,21 +76,27 @@
 
 ### 고객센터 상담 비율
 ![download](https://github.com/user-attachments/assets/1dac0981-380d-46f8-b8cc-7872f46c555c)
+- Customer service calls 횟수가 증가할수록 이탈 확률이 급격히 높아짐. 이는 고객 불만족과 문제 해결의 어려움을 반영함
 
 ### 국제전화 가입비율
 ![download](https://github.com/user-attachments/assets/1db52c47-3d11-4d62-b159-37f264a24ee5)
+- International plan 미가입 고객에서 이탈률이 더 높게 나타남. 국제전화 요금제 가입이 고객 유지에 영향을 줄 수 있음
 
 ### 음성사사함 가입비율
 ![download](https://github.com/user-attachments/assets/aa216f78-ad8d-4a0b-83d1-7b5d57e456bf)
+- Voice mail plan 미가입 고객의 이탈률이 상대적으로 높음. 음성사서함 요금제가 고객 유지에 기여할 가능성 존재
 
 ### 이탈률
 ![download](https://github.com/user-attachments/assets/aa611630-d6a6-473f-8955-8428e40611d2)
+- 전체 고객 중 이탈 고객의 비율이 낮지만, 특정 조건(높은 통화량, 고객센터 이용량)에서 집중적으로 이탈이 발생함
 
 ### 고개센터 통화량에 따른 이탈률 & 이상치
 ![churn_vs_customer_service_calls](https://github.com/user-attachments/assets/e491b51b-ce10-41ea-b632-9ded739fc8e7)
+- 고객센터에 5회 이상 전화를 한 고객은 이탈률이 현저히 높음. 이는 서비스 불만족이 주요 원인임을 나타냄
 
 ### 통화량이 높은 고객들 대상 이탈률
 ![churn_vs_total_day_minutes](https://github.com/user-attachments/assets/9618780c-ebd7-4a49-8a94-511026fcb1cf)
+- 통화량이 비정상적으로 높은 고객군에서 이탈률이 급격히 상승함. 이러한 고객은 별도의 관리가 필요함
 
 ### 데이터 전처리
 <pre>
