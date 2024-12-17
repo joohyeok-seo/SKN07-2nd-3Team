@@ -101,7 +101,7 @@ test_data = test_data.drop(columns=columns_to_drop, axis=1)
   </tr>
   <tr>
     <th>KNN</th>
-    <th>0.89</th>
+    <th>0.885</th>
     <th>0</th>
     <th>0</th>
     <th>0</th>
@@ -109,7 +109,7 @@ test_data = test_data.drop(columns=columns_to_drop, axis=1)
   </tr>
   <tr>
     <th>Decision Tree</th>
-    <th>0</th>
+    <th>0.913</th>
     <th>0</th>
     <th>0</th>
     <th>0</th>
@@ -117,7 +117,7 @@ test_data = test_data.drop(columns=columns_to_drop, axis=1)
   </tr>
   <tr>
     <th>XGBoost</th>
-    <th>0</th>
+    <th>0.957</th>
     <th>0</th>
     <th>0</th>
     <th>0</th>
@@ -125,7 +125,7 @@ test_data = test_data.drop(columns=columns_to_drop, axis=1)
   </tr>
   <tr>
     <th>Random Forest</th>
-    <th>0</th>
+    <th>0.952</th>
     <th>0</th>
     <th>0</th>
     <th>0</th>
