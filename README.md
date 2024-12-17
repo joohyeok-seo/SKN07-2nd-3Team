@@ -82,15 +82,13 @@
   </tr>
   <tr>
     <td>
-      <img src="https://github.com/user-attachments/assets/1dac0981-380d-46f8-b8cc-7872f46c555c" alt="Distribution Graph" width="400">
+      <img src="https://github.com/user-attachments/assets/1dac0981-380d-46f8-b8cc-7872f46c555c" alt="Distribution Graph" width="600">
     </td>
     <td>
       <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/curstomer_service_calls.png" alt="Churn Rate Graph" width="400">
     </td>
   </tr>
 </table>
-![download](https://github.com/user-attachments/assets/1dac0981-380d-46f8-b8cc-7872f46c555c)
-<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/curstomer_service_calls.png" width="175" height="175">
 - Customer service calls 횟수가 증가할수록 이탈 확률이 급격히 높아짐. 이는 고객 불만족과 문제 해결의 어려움을 반영함
 
 ### 국제전화 가입비율
