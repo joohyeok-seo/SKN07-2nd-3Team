@@ -106,7 +106,7 @@
     </td>
   </tr>
 </table>
-- International plan 미가입 고객에서 이탈률이 더 높게 나타남. 국제전화 요금제 가입이 고객 유지에 영향을 줄 수 있음
+- 국제전화 요금제에 가입한 고객의 이탈률이 더 높기 때문에, 요금제의 서비스 품질 개선 또는 고객 불만족 해소를 위한 전략이 필요함
 
 ### 음성사사함 가입비율
 ![download](https://github.com/user-attachments/assets/aa216f78-ad8d-4a0b-83d1-7b5d57e456bf)
