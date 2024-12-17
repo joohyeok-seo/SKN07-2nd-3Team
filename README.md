@@ -98,6 +98,7 @@ test_data = test_data.drop(columns=columns_to_drop, axis=1)
 3. XGBoost Model
 4. Random Forest Model
 
+### Evaluation Metrics by Model
 <table>
   <tr>
     <th>Model</th>
