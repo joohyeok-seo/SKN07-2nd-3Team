@@ -71,6 +71,9 @@
 1. RNN Model Create
 ![ rnn_model_code ](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/rnn_model_create.png)
 
+2. Used to Prevent Overfitting
+![ prevent_overfitting ](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/early%20stopping.png).
+
 ---
 
 ## 기술 스택
