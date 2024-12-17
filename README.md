@@ -56,6 +56,7 @@
 ## EDA
 ![스크린샷 2024-12-17 093254](https://github.com/user-attachments/assets/cebe2bc1-0ac4-4122-8d90-08d7bd4e3317)
 
+
 ![download](https://github.com/user-attachments/assets/0506510c-8f6c-4107-ad54-341797303ecf)
 
 ![download](https://github.com/user-attachments/assets/f3801354-610a-4863-8835-173f94369d2d)
@@ -63,6 +64,12 @@
 ![download](https://github.com/user-attachments/assets/986f494c-42d6-4a46-9389-824cc258261a)
 
 ![download](https://github.com/user-attachments/assets/1dac0981-380d-46f8-b8cc-7872f46c555c)
+
+![download](https://github.com/user-attachments/assets/1db52c47-3d11-4d62-b159-37f264a24ee5)
+
+![download](https://github.com/user-attachments/assets/aa216f78-ad8d-4a0b-83d1-7b5d57e456bf)
+
+![download](https://github.com/user-attachments/assets/aa611630-d6a6-473f-8955-8428e40611d2)
 
 
 ---
@@ -75,8 +82,6 @@ train_data = train_data.drop(columns=columns_to_drop, axis=1)
 test_data = test_data.drop(columns=columns_to_drop, axis=1)
 </code>
 </pre>
-
-
 ---
 
 ## Machine Learning
