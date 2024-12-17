@@ -7,15 +7,6 @@ import seaborn as sns
 # split the dataset
 from sklearn.model_selection import train_test_split
 
-# preprossing
-from sklearn.impute import SimpleImputer
-from sklearn.preprocessing import StandardScaler , LabelEncoder , OrdinalEncoder
-from sklearn.pipeline import Pipeline , FeatureUnion
-from sklearn_features.transformers import DataFrameSelector
-from datasist.structdata import detect_outliers
-from sklearn.model_selection import cross_val_score, cross_val_predict
-from imblearn.over_sampling import SMOTE
-
 # Models
 from sklearn.linear_model import LogisticRegression , SGDClassifier
 from sklearn.svm import SVC
@@ -23,6 +14,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier 
 from sklearn.ensemble import AdaBoostClassifier , BaggingClassifier , GradientBoostingClassifier , RandomForestClassifier , VotingClassifier
 from sklearn.multiclass import OneVsOneClassifier
+from sklearn.model_selection import cross_val_score
 import xgboost as xgb
 
 # Metrix 
@@ -40,11 +32,9 @@ import pickle
 # PDF
 from fpdf import FPDF
 
-available_models = [
-    'K-Neighbors Classifier',
-    'Decision Tree Classifier',
-    'Random Forest Classifier'
-]
+# preprossing
+from imblearn.over_sampling import SMOTE
+from .utils.utils import preprocess
 
 NAMES = {
     'ovo' : 'One Vs One Classifier (estimator=RandomForestClassifier)',
@@ -62,49 +52,20 @@ rNAMES = {v : k for k, v in NAMES.items()}
 
 models = {
     # 'ovo' : OneVsOneClassifier(estimator=RandomForestClassifier()),
-    'knn' : KNeighborsClassifier(),
+    'knn' : KNeighborsClassifier(n_neighbors=5),
     # 'SGD': SGDClassifier(),
-    # 'Lgr': LogisticRegression(),
-    # 'xgb': xgb.XGBClassifier(),
+    'Lgr': LogisticRegression(),
+    'xgb': xgb.XGBClassifier(eval_metric='logloss'),
     'dt' : DecisionTreeClassifier(),
     'rf' : RandomForestClassifier(),
-    # 'bag': BaggingClassifier(),
-    # 'gdb': GradientBoostingClassifier(),
+    'bag': BaggingClassifier(),
+    'gdb': GradientBoostingClassifier(),
     # 'SVC' : SVC(),
     # 'baf_clf' : BaggingClassifier(DecisionTreeClassifier(), n_estimators=500,max_samples=100, bootstrap=True)
           }
 
-def preprocess(train_data):
-
-    label_encoders = {}
-    categorical_columns = ['International plan', 'Voice mail plan', 'Churn']
-
-    for col in categorical_columns:
-        le = LabelEncoder()
-        train_data[col] = le.fit_transform(train_data[col])
-        # test_data[col] = le.transform(test_data[col])  
-        label_encoders[col] = le
-
-    numerical_columns = [
-        'Account length', 'Number vmail messages', 'Total day minutes', 'Total day calls',
-        'Total day charge', 'Total eve minutes', 'Total eve calls', 'Total eve charge',
-        'Total night minutes', 'Total night calls', 'Total night charge',
-        'Total intl minutes', 'Total intl calls', 'Total intl charge',
-        'Customer service calls'
-    ]
-
-    scaler = StandardScaler()
-    train_data[numerical_columns] = scaler.fit_transform(train_data[numerical_columns])
-    # test_data[numerical_columns] = scaler.transform(test_data[numerical_columns])
-
-    columns_to_drop = ['State', 'Area code']
-    train_data = train_data.drop(columns=columns_to_drop, axis=1)
-    # test_data = test_data.drop(columns=columns_to_drop, axis=1)
-
-    x = train_data.drop('Churn', axis=1)
-    y = train_data['Churn']
-
-    return x, y
+available_models = [NAMES[k] for k, _ in models.items()]
+no_cv_socres = ['xgb']
 
 def predict(df, model_name: str = 'K-Neighbors Classifier'):
 
@@ -146,9 +107,12 @@ def fit(df, y_col:str='Churn'):
         print(f'For {key} Model : ')
         print('_' * 90)
 
-        # k-fold
-        cv_scores = cross_val_score(model, x_train, y_train, cv=5, scoring='accuracy')
-            
+        # k-fold'
+        if key not in no_cv_socres:
+            cv_scores = cross_val_score(model, x_train, y_train, cv=5, scoring='accuracy')
+        else:
+            cv_scores = np.array([0] * 5)
+
         model.fit(x_train, y_train)
 
         y_pred = model.predict(x_test)
@@ -239,3 +203,8 @@ def fit(df, y_col:str='Churn'):
     # os.remove(cm_image_path)
 
     print("[INFO] PDF 파일이 생성되었습니다.")
+
+
+
+if __name__ == "__main__":
+    ...
