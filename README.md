@@ -84,6 +84,9 @@
 4. Loss Curve
    <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/RNN_model_loss.png" alt="loss_curve" width="1100px">
 
+5. Learning Curve
+   <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/RNN_model_learning_curve.png" alt="learning_curve" width="1100px">
+
 ---
 
 ## 기술 스택
