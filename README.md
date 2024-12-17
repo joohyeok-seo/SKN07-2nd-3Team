@@ -116,6 +116,7 @@ test_data = test_data.drop(columns=columns_to_drop, axis=1)
     <th>0.646</th>
   </tr>
   <tr>
+    <th>Disition Tree</th>
     <th>0.913</th>
     <th>0.680</th>
     <th>0.737</th>
