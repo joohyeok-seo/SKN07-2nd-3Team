@@ -126,10 +126,10 @@ test_data = test_data.drop(columns=columns_to_drop, axis=1)
   <tr>
     <th>XGBoost</th>
     <th>0.957</th>
-    <th>0</th>
-    <th>0</th>
-    <th>0</th>
-    <th>0</th>
+    <th>0.934</th>
+    <th>0.747</th>
+    <th>0.830</th>
+    <th>0.911</th>
   </tr>
   <tr>
     <th>Random Forest</th>
