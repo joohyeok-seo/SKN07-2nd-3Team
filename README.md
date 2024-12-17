@@ -101,7 +101,7 @@ test_data = test_data.drop(columns=columns_to_drop, axis=1)
   </tr>
   <tr>
     <th>KNN</th>
-    <th>0</th>
+    <th>0.89</th>
     <th>0</th>
     <th>0</th>
     <th>0</th>
