@@ -122,6 +122,8 @@
   </tr>
 </table>
 
+<table> <tr> <th>Number</th> <th>Column</th> <th>Meaning</th> <th>Example</th> </tr> <tr> <th>1</th> <th>State</th> <th>고객이 거주하는 주</th> <th>CA" (California), "NY" (New York)</th> </tr> <tr> <th>2</th> <th>International plan</th> <th>국제 전화 요금제 가입 여부</th> <th>"Yes" (가입), "No" (미가입)</th> </tr> <tr> <th>3</th> <th>Voice mail plan</th> <th>음성사서함 요금제 가입 여부</th> <th>"Yes" (가입), "No" (미가입)</th> </tr> <tr> <th>4</th> <th>Total day minutes</th> <th>주간(낮 시간) 동안 사용한 총 통화 시간(분)</th> <th>265.1 → 265.1분 통화</th> </tr> <tr> <th>5</th> <th>Total eve minutes</th> <th>저녁 시간 동안 사용한 총 통화 시간(분)</th> <th>197.4 → 197.4분 통화</th> </tr> <tr> <th>6</th> <th>Total intl minutes</th> <th>국제 통화에 사용된 총 시간(분)</th> <th>10.0 → 10분 사용</th> </tr> <tr> <th>7</th> <th>Customer service calls</th> <th>고객 센터에 전화한 횟수</th> <th>1 → 1회 전화</th> </tr> <tr> <th>8</th> <th>Churn</th> <th>고객 이탈 여부</th> <th>True (이탈), False (유지)</th> </tr> </table>
+
 ---
 
 ## EDA
