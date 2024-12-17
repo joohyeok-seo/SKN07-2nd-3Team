@@ -52,17 +52,6 @@
 
 ---
 
-## 데이터 전처리
-<pre>
-<code>
-columns_to_drop = ['State', 'Area code']
-train_data = train_data.drop(columns=columns_to_drop, axis=1)
-test_data = test_data.drop(columns=columns_to_drop, axis=1)
-</code>
-</pre>
-
----
-
 ## EDA
 ### Correlation Matrix
 ![download](https://github.com/user-attachments/assets/6f8277cb-c581-465d-b751-56b82aa42e2b)
@@ -94,6 +83,14 @@ test_data = test_data.drop(columns=columns_to_drop, axis=1)
 ### 통화량이 높은 고객들 대상 이탈률
 ![churn_vs_total_day_minutes](https://github.com/user-attachments/assets/9618780c-ebd7-4a49-8a94-511026fcb1cf)
 
+### 데이터 전처리
+<pre>
+<code>
+columns_to_drop = ['State', 'Area code']
+train_data = train_data.drop(columns=columns_to_drop, axis=1)
+test_data = test_data.drop(columns=columns_to_drop, axis=1)
+</code>
+</pre>
 
 ---
 
