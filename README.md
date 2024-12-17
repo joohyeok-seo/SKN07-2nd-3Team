@@ -70,11 +70,9 @@
 ## 데이터 전처리
 <pre>
 <code>
- {
 columns_to_drop = ['State', 'Area code']
 train_data = train_data.drop(columns=columns_to_drop, axis=1)
 test_data = test_data.drop(columns=columns_to_drop, axis=1)
-}
 </code>
 </pre>
 
