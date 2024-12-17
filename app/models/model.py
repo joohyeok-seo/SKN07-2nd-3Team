@@ -121,8 +121,13 @@ def predict(df, model_name: str = 'K-Neighbors Classifier'):
     with open(os.path.join(base_dir, f'params/model-{rNAMES[model_name]}.pkl'), 'rb') as f:
         model_dict = pickle.load(f)
     model = model_dict['model']
-        
-    return np.mean(model.predict_proba(x)[:, 1])
+    
+    result = {
+        'ratio' : np.mean(model.predict_proba(x)[:, 1] >= 0.5),
+        'total' : df.shape
+    }
+
+    return result
 
 def fit(df, y_col:str='Churn'):
 

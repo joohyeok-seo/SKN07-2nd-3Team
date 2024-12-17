@@ -12,7 +12,7 @@ from models.model import predict, fit
 from models.model import available_models
 
 
-app = FastAPI() # 서버 실행 방법: `uvicorn main:app --reload`
+app = FastAPI()
  
 ALLOWED_EXTENSIONS = {"csv"}
 MAX_FILE_SIZE = 10_000_000  # 10 MB
@@ -80,7 +80,7 @@ async def create_upload_file(file: UploadFile = File(...), model: str = Form(...
     except Exception as e:
         raise HTTPException(status_code=500, detail=f'업로드된 파일 삭제 중 오류 발생: {str(e)}')
     
-    return JSONResponse(content={"Score": result})
+    return JSONResponse(content=result)
     
 @app.post("/uploadfile/train")
 async def create_upload_file(file: UploadFile = File(...)):

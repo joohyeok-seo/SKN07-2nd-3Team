@@ -43,11 +43,13 @@ def main(args):
         if response.status_code == 200:
             st.success("파일이 성공적으로 FastAPI 서버로 전송되었습니다.")
             # 점수 범위가 0~1 이므로 ProgressBar 사용
-            score = response.json().get("Score", 0)
+            score = response.json().get("ratio", 0)
             score_percentage = score * 100
             energy_bar = st.progress(0)  # 초기값 0으로 설정
             energy_bar.progress(score)  # 받은 점수로 ProgressBar 업데이트
-            st.write(f"고객 이탈 확률: {score_percentage:.2f}%")
+            num = response.json().get("total", 0)
+            
+            st.write(f"고객 이탈률 에측: {score_percentage:.2f}% / 총 {num[0]}명 중 {(num[0] * score):.0f}명 이탈 예정으로 보여요.")
         else:
             st.error(f"파일 전송 실패: {response.status_code}")
 
