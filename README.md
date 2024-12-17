@@ -1,3 +1,5 @@
+# 부리부리방법대
+
 ## 팀 소개
 <table>
   <tr>
@@ -22,10 +24,6 @@
     <th>Random Forest Model</th>
   </tr>
 </table>
-
----
-
-## 팀명
 
 ---
 
