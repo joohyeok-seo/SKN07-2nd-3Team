@@ -92,7 +92,20 @@
 - Customer service calls 횟수가 증가할수록 이탈 확률이 급격히 높아짐. 이는 고객 불만족과 문제 해결의 어려움을 반영함
 
 ### 국제전화 가입비율
-![download](https://github.com/user-attachments/assets/1db52c47-3d11-4d62-b159-37f264a24ee5)
+<table>
+  <tr>
+    <td align="center"><b>국제전화 분포</b></td>
+    <td align="center"><b>국제전화 가입별 Churn 비율</b></td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/1db52c47-3d11-4d62-b159-37f264a24ee5" alt="Distribution Graph" width="600">
+    </td>
+    <td>
+      <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/Subscribed.png" alt="Churn Rate Graph" width="400">
+    </td>
+  </tr>
+</table>
 - International plan 미가입 고객에서 이탈률이 더 높게 나타남. 국제전화 요금제 가입이 고객 유지에 영향을 줄 수 있음
 
 ### 음성사사함 가입비율
