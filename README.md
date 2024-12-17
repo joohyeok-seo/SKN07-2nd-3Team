@@ -268,7 +268,7 @@ RNN은 딥러닝 모델로 적용되었지만, 성능과 효율성 면에서 부
 1. CSV 파일 업로드<br>
 &nbsp;&nbsp;&nbsp;&nbsp;- 예측할 데이터셋을 업로드 합니다.<br>
 2. 모델 선택<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- 사용자는 Disition Tree, Random Forest, XGBoost 등 다양한 모델 중 하나를 선택할 수 있습니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- 사용자는 Decision Tree, Random Forest, XGBoost 등 다양한 모델 중 하나를 선택할 수 있습니다.<br>
 3. 이탈 예측 결과 확인<br>
 &nbsp;&nbsp;&nbsp;&nbsp;- 예측된 고객 이탈률과 이탈 예상 고객 수를 확인할 수 있습니다.<br>
 
