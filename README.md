@@ -261,6 +261,10 @@ RNN은 딥러닝 모델로 적용되었지만, 성능과 효율성 면에서 부
 
 ---
 
+<table> 
+  <tr> <td align="center"><b>모델 선택</b></td> <td align="center"><b>CSV 파일 업로드</b></td> <td align="center"><b>이탈 예측 결과</b></td> </tr> <tr> <td> <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/streamlit%2001.png" alt="Model Selection" width="300"> </td> <td> <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/streamlit%2002.png" alt="CSV File Upload" width="300"> </td> <td> <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/streamlit%2003.png" alt="Churn Prediction Results" width="300"> </td> </tr> 
+</table>
+
 ## 한 줄 회고
 - 김나예:
 - 김서진:
