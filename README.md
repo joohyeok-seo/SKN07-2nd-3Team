@@ -38,36 +38,23 @@
 ## 개요
 #### 가입 고객 이탈 예측 모델 설계 및 구축
 <br>
-1. 훈련·테스트 데이터 선정
-  - 결측치가 적고 불필요한 feature가 적은 데이터를 선정해 모델 학습<br>
-2. ML 성능 비교
-  - ML 알고리즘 5개를 선정해 동일한 데이터로 성능 비교 후, 가장 성능이 좋은 알고리즘을 채택 <br>
-3. 예측 모델 설계·구축
-  - 채택한 알고리즘으로 ML 모델 설계 및 구축하여 성능 검증<br>
+1. 훈련·테스트 데이터 선정<br>
+  * 결측치가 적고 불필요한 feature가 적은 데이터를 선정해 모델 학습<br>
+2. ML 성능 비교<br>
+  * ML 알고리즘 5개를 선정해 동일한 데이터로 성능 비교 후, 가장 성능이 좋은 알고리즘을 채택 <br>
+3. 예측 모델 설계·구축<br>
+  * 채택한 알고리즘으로 ML 모델 설계 및 구축하여 성능 검증<br>
 
 ## 프로젝트 목표
+여러 머신러닝 모델의 비교, 분석을 통해 고객 이탈 예측에 가장 적합한 모델을 구축합니다.
 
----
 
 ## EDA
-![download](https://github.com/user-attachments/assets/6cb6f933-b5db-4814-9271-b11e69d90055)
+![스크린샷 2024-12-17 093254](https://github.com/user-attachments/assets/cebe2bc1-0ac4-4122-8d90-08d7bd4e3317)
 
 ---
 
 ## 데이터 전처리
-![download](https://github.com/user-attachments/assets/304edc1e-0f9b-49cc-8ce2-17f847dd30ec)
-
-![download](https://github.com/user-attachments/assets/0ede5db1-2bde-4418-96d8-b263510dbc84)
-
-![download](https://github.com/user-attachments/assets/dad14400-26d4-426c-aaa7-869bdef21222)
-
-![download](https://github.com/user-attachments/assets/b6c3226a-087e-4939-a284-c6daca371180)
-
-![download](https://github.com/user-attachments/assets/c8945a91-65ad-4a1a-94ba-d1d26e4c7b67)
-
-![download](https://github.com/user-attachments/assets/047f9f87-d20f-4d4e-bdda-b0af286eb6ed)
-
-![download](https://github.com/user-attachments/assets/81c79777-36c6-431f-91ae-780475b56aa3)
 
 ---
 
@@ -82,14 +69,10 @@
 ## Deep Learning
 ### RNN Model
 1. RNN Model Create
-   <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/rnn_model_create.png" alt="RNN Model Create" width="900px">
+![ rnn_model_code ](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/rnn_model_create.png)
 
 2. Used to Prevent Overfitting
-![ prevent_overfitting ](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/early%20stopping.png)
-
-3. Training Result
-![ training_result ](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/training_result.png)
-  - Training during 34 epoch
+![ prevent_overfitting ](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/early%20stopping.png).
 
 ---
 
