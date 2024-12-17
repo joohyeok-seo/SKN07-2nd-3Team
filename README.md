@@ -99,10 +99,10 @@
   </tr>
   <tr>
     <td>
-      <img src="https://github.com/user-attachments/assets/1db52c47-3d11-4d62-b159-37f264a24ee5" alt="Distribution Graph" width="600">
+      <img src="https://github.com/user-attachments/assets/1db52c47-3d11-4d62-b159-37f264a24ee5" alt="Distribution Graph" width="500">
     </td>
     <td>
-      <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/Subscribed.png" alt="Churn Rate Graph" width="400">
+      <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/Subscribed.png" alt="Churn Rate Graph" width="500">
     </td>
   </tr>
 </table>
