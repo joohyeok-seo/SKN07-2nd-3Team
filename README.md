@@ -130,7 +130,7 @@
 ![download](https://github.com/user-attachments/assets/aa611630-d6a6-473f-8955-8428e40611d2)
 - 전체 고객 중 이탈 고객의 비율이 낮지만, 특정 조건(높은 통화량, 고객센터 이용량)에서 집중적으로 이탈이 발생함
 
-### 고개센터 통화량에 따른 이탈률 & 이상치
+### 고객센터 통화량에 따른 이탈률 & 이상치
 ![churn_vs_customer_service_calls](https://github.com/user-attachments/assets/e491b51b-ce10-41ea-b632-9ded739fc8e7)
 - 고객센터에 5회 이상 전화를 한 고객은 이탈률이 현저히 높음. 이는 서비스 불만족이 주요 원인임을 나타냄
 
@@ -202,19 +202,19 @@ test_data = test_data.drop(columns=columns_to_drop, axis=1)
 ### 최종 모델 선정 과정
 이번 프로젝트에서는 XGBoost와 Random Forest 모델이 가장 높은 성능을 보였습니다. 각 모델의 주요 성능 지표를 비교한 결과 다음과 같은 결론을 도출했습니다.
 
-- Random Forest는 Precision에서 가장 높은 성능을 보였으나, Recall이 상대적으로 낮아 이탈 고객을 놓칠 가능성이 있었습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;- Random Forest는 Precision에서 가장 높은 성능을 보였으나, Recall이 상대적으로 낮아 이탈 고객을 놓칠 가능성이 있었습니다.
 
-- XGBoost는 Recall과 F1 Score에서 더 균형 잡힌 성능을 보였습니다. 특히 Recall이 Random Forest보다 높아 이탈 고객을 더 많이 예측하는 강점을 보였습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;- XGBoost는 Recall과 F1 Score에서 더 균형 잡힌 성능을 보였습니다. 특히 Recall이 Random Forest보다 높아 이탈 고객을 더 많이 예측하는 강점을 보였습니다.
 
 ### 최종 모델 선정 (XGBoost 선택)
 1. 균형 잡힌 성능
-- Recall이 Random Forest보다 높아 이탈 고객을 더 많이 예측할 수 있습니다.
-- F1 Score도 높은 수준을 유지하며 정확도와 재현율 간 균형을 이룹니다.
+&nbsp;&nbsp;&nbsp;&nbsp;- Recall이 Random Forest보다 높아 이탈 고객을 더 많이 예측할 수 있습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;- F1 Score도 높은 수준을 유지하며 정확도와 재현율 간 균형을 이룹니다.
 2. 과적합 방지
-- Random Forest는 Precision은 높았지만 과적합 경향이 보였습니다.
-- XGBoost는 안정적이면서도 일반화 성능이 뛰어났습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;- Random Forest는 Precision은 높았지만 과적합 경향이 보였습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;- XGBoost는 안정적이면서도 일반화 성능이 뛰어났습니다.
 3. 해석 가능성
-- XGBoost를 통해 Feature Importance를 분석하면 이탈 요인을 명확히 파악할 수 있습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;- XGBoost를 통해 Feature Importance를 분석하면 이탈 요인을 명확히 파악할 수 있습니다.
 
 ---
 
@@ -241,16 +241,16 @@ test_data = test_data.drop(columns=columns_to_drop, axis=1)
 
 ### RNN 모델의 한계
 1. 성능 부족
-- 정확도(Accuracy)가 88.9%로 나쁘지 않지만, Recall이 43.2%로 매우 낮습니다.
-- 이는 이탈 고객을 제대로 예측하지 못하는 한계가 있음을 의미합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;- 정확도(Accuracy)가 88.9%로 나쁘지 않지만, Recall이 43.2%로 매우 낮습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;- 이는 이탈 고객을 제대로 예측하지 못하는 한계가 있음을 의미합니다.
 2. F1 Score
-- F1 Score가 0.526으로 낮아 Precision과 Recall의 균형이 부족합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;- F1 Score가 0.526으로 낮아 Precision과 Recall의 균형이 부족합니다.
 3. ROC-AUC
-- ROC-AUC 점수가 0.698로, 다른 머신러닝 모델(XGBoost, Random Forest)에 비해 식별 능력이 떨어집니다.
+&nbsp;&nbsp;&nbsp;&nbsp;- ROC-AUC 점수가 0.698로, 다른 머신러닝 모델(XGBoost, Random Forest)에 비해 식별 능력이 떨어집니다.
 
 ### XGBoost와의 비교
-- XGBoost는 모든 성능 지표에서 RNN보다 우수한 결과를 보였습니다.
-- 특히 Recall과 ROC-AUC에서 큰 차이를 보이며, 이탈 고객 예측에 더 효과적입니다.
+&nbsp;&nbsp;&nbsp;&nbsp;- XGBoost는 모든 성능 지표에서 RNN보다 우수한 결과를 보였습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;- 특히 Recall과 ROC-AUC에서 큰 차이를 보이며, 이탈 고객 예측에 더 효과적입니다.
 
 RNN은 딥러닝 모델로 적용되었지만, 성능과 효율성 면에서 부족했습니다.
 따라서 XGBoost가 최종 모델로 선정되었습니다.
@@ -266,11 +266,11 @@ RNN은 딥러닝 모델로 적용되었지만, 성능과 효율성 면에서 부
 
 ### 프로젝트 실행 과정
 1. CSV 파일 업로드
-- 예측할 데이터셋을 업로드 합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;- 예측할 데이터셋을 업로드 합니다.
 2. 모델 선택
-- 사용자는 Disition Tree, Random Forest, XGBoost 등 다양한 모델 중 하나를 선택할 수 있습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;- 사용자는 Disition Tree, Random Forest, XGBoost 등 다양한 모델 중 하나를 선택할 수 있습니다.
 3. 이탈 예측 결과 확인
-- 예측된 고객 이탈률과 이탈 예상 고객 수를 확인할 수 있습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;- 예측된 고객 이탈률과 이탈 예상 고객 수를 확인할 수 있습니다.
 
 <table> 
   <tr> <td align="center"><b>CSV 파일 업로드</b></td> <td align="center"><b>모델 선택</b></td> <td align="center"><b>이탈 예측 결과</b></td> </tr> <tr> <td> <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/streamlit%2001.png" alt="Model Selection" width="300"> </td> <td> <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/streamlit%2002.png" alt="CSV File Upload" width="300"> </td> <td> <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/streamlit%2003.png" alt="Churn Prediction Results" width="300"> </td> </tr> 
