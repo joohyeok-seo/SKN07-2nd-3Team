@@ -34,15 +34,17 @@
 Customer churn prediction plays a crucial role in improving customer experience and enhancing competitiveness. Predictive models can identify customer dissatisfaction or concerns in advance, enabling companies to address these issues proactively. This approach not only increases customer satisfaction but also provides better services than competitors, maintaining customer loyalty and ensuring long-term business growth.
 Our project focuses on building a customer churn prediction model for subscription-based businesses, e-commerce platforms, financial services companies, and other service providers. Through this model, companies can devise strategies to reduce churn, improve customer management efficiency, and establish competitive market strategies.
 
-### 프로젝트명
-***이탈방지 대작전!!!***
+### 프로젝트명 (Project Title)
+**이탈방지 대작전!!!**
+**Customer Churn Defense Strategy!!!**
 
-### 개요
-#### 가입 고객 이탈 예측 모델 설계 및 구축
+### 개요 (Overview)
+#### 가입 고객 이탈 예측 모델 설계 및 구축 (Design and Construction of a Customer Churn Prediction Model)
 <br>
 
-**1. 훈련·테스트 데이터 선정**<br>
+**1. 훈련·테스트 데이터 선정 Selection of Training and Test Data**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;- 결측치가 적고 불필요한 feature가 적은 데이터를 선정해 모델 학습<br>
+Selected data with minimal noise and fewer unnecessary features to train the model effectively.
 
 **2. ML 성능 비교**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;- ML 알고리즘 5개를 선정해 동일한 데이터로 성능 비교 후, 가장 성능이 좋은 알고리즘을 채택 <br>
