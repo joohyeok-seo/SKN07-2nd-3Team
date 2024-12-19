@@ -58,7 +58,7 @@ Our project focuses on building a customer churn prediction model for subscripti
 
 ### 목표 (Objective)
 여러 머신러닝 모델의 비교, 분석을 통해 고객 이탈 예측에 가장 적합한 고성능 모델을 구축합니다.
-To build an optimized and high-performing customer churn prediction model through the comparison and analysis of various machine learning models.
+- To build an optimized and high-performing customer churn prediction model through the comparison and analysis of various machine learning models.
 
 ---
 
