@@ -1,12 +1,12 @@
-# 부리부리방범대
+# 부리부리방범대 (Booribooribang Team)
 
-## 팀 소개
+## 팀 소개 (Team Introduction)
 <table>
   <tr>
     <th>김나예</th>
     <th>김서진</th>
     <th>나성호</th>
-    <th>서주혁</th>
+    <th>서주혁(Joohyeok)</th>
     <th>신동익</th>
   </tr>
   <tr>
@@ -27,9 +27,12 @@
 
 ---
 
-## 프로젝트 소개<BR>
+## 프로젝트 소개 (Project Overview)<BR>
 고객 이탈률 예측은 고객 경험을 개선하고 경쟁력을 높이는 데 중요한 역할을 합니다. 예측 모델을 통해 고객의 불만이나 불편을 사전에 파악하고 이를 해결함으로써 고객 만족도를 향상시킬 수 있습니다. 또한, 이탈률을 예측함으로써 경쟁사보다 더 나은 서비스를 제공하고, 고객 충성도를 유지하며, 장기적인 성장을 이끌어낼 수 있습니다.<BR>
 우리는 구독 기반 서비스 기업, 전자상거래 기업, 금융 서비스 기업 등 서비스 제공 기업을 위한 **고객 이탈률 예측 모델**을 구축했습니다. 이를 통해 기업은 이탈 대응 전략을 수립하고, 서비스 개선안을 도출하여 더 효율적인 고객 관리와 경쟁력 있는 시장 전략을 마련할 수 있습니다.
+
+Customer churn prediction plays a crucial role in improving customer experience and enhancing competitiveness. Predictive models can identify customer dissatisfaction or concerns in advance, enabling companies to address these issues proactively. This approach not only increases customer satisfaction but also provides better services than competitors, maintaining customer loyalty and ensuring long-term business growth.
+Our project focuses on building a customer churn prediction model for subscription-based businesses, e-commerce platforms, financial services companies, and other service providers. Through this model, companies can devise strategies to reduce churn, improve customer management efficiency, and establish competitive market strategies.
 
 ### 프로젝트명
 ***이탈방지 대작전!!!***
