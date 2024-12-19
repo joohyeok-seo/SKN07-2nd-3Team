@@ -46,20 +46,24 @@ Our project focuses on building a customer churn prediction model for subscripti
 &nbsp;&nbsp;&nbsp;&nbsp;- 결측치가 적고 불필요한 feature가 적은 데이터를 선정해 모델 학습<br>
 Selected data with minimal noise and fewer unnecessary features to train the model effectively.
 
-**2. ML 성능 비교**<br>
+**2. ML 성능 비교 Comparison of ML Performance**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;- ML 알고리즘 5개를 선정해 동일한 데이터로 성능 비교 후, 가장 성능이 좋은 알고리즘을 채택 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;- Kaggle 머신러닝 웹 커뮤니티의 **Telecom Churn Dataset** 채택<br>
+- Compared the performance of five machine learning algorithms using a consistent dataset, selecting the algorithm with the best performance.
+- Used the Telecom Churn Dataset from the Kaggle machine learning community.
 
-**3. 예측 모델 설계·구축**<br>
+**3. 예측 모델 설계·구축 Design and Construction of the Prediction Model**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;- 채택한 알고리즘으로 ML 모델 설계 및 구축하여 성능 검증<br>
+- Constructed and validated the model using the selected algorithm for maximum performance.
 
-### 목표
+### 목표 (Objective)
 여러 머신러닝 모델의 비교, 분석을 통해 고객 이탈 예측에 가장 적합한 고성능 모델을 구축합니다.
+To build an optimized and high-performing customer churn prediction model through the comparison and analysis of various machine learning models.
 
 ---
 
 ## 주요 데이터 설명
-<table> <tr> <th>Number</th> <th>Column</th> <th>Meaning</th> <th>Example</th> </tr> <tr> <th>1</th> <th>State</th> <th>고객이 거주하는 주</th> <th>CA" (California), "NY" (New York)</th> </tr> <tr> <th>2</th> <th>International plan</th> <th>국제 전화 요금제 가입 여부</th> <th>"Yes" (가입), "No" (미가입)</th> </tr> <tr> <th>3</th> <th>Voice mail plan</th> <th>음성사서함 요금제 가입 여부</th> <th>"Yes" (가입), "No" (미가입)</th> </tr> <tr> <th>4</th> <th>Total day minutes</th> <th>주간(낮 시간) 동안 사용한 총 통화 시간(분)</th> <th>265.1 → 265.1분 통화</th> </tr> <tr> <th>5</th> <th>Total eve minutes</th> <th>저녁 시간 동안 사용한 총 통화 시간(분)</th> <th>197.4 → 197.4분 통화</th> </tr> <tr> <th>6</th> <th>Total intl minutes</th> <th>국제 통화에 사용된 총 시간(분)</th> <th>10.0 → 10분 사용</th> </tr> <tr> <th>7</th> <th>Customer service calls</th> <th>고객 센터에 전화한 횟수</th> <th>1 → 1회 전화</th> </tr> <tr> <th>8</th> <th>Churn</th> <th>고객 이탈 여부</th> <th>True (이탈), False (유지)</th> </tr> </table>
+<table> <tr> <th>Number</th> <th>Column</th> <th>Meaning</th> <th>Example</th> </tr> <tr> <th>1</th> <th>State</th> <th>고객이 거주하는 주 (The state where the customer resides)</th> <th>CA" (California), "NY" (New York)</th> </tr> <tr> <th>2</th> <th>International plan</th> <th>국제 전화 요금제 가입 여부 (Whether the customer has subscribed to an international calling plan)</th> <th>"Yes" (가입 Subscribed), "No" (미가입 Not subscribed)</th> </tr> <tr> <th>3</th> <th>Voice mail plan</th> <th>음성사서함 요금제 가입 여부 (Whether the customer has subscribed to a voicemail plan)</th> <th>"Yes" (가입 Subscribed), "No" (미가입 Not subscribed)</th> </tr> <tr> <th>4</th> <th>Total day minutes</th> <th>주간(낮 시간) 동안 사용한 총 통화 시간(분) (Total call duration during daytime (minutes))</th> <th>265.1 → 265.1분 통화 (265.1 → 265.1 minutes)</th> </tr> <tr> <th>5</th> <th>Total eve minutes</th> <th>저녁 시간 동안 사용한 총 통화 시간(분) (Total call duration during evening hours (minutes))</th> <th>197.4 → 197.4분 통화 (197.4 → 197.4 minutes)</th> </tr> <tr> <th>6</th> <th>Total intl minutes</th> <th>국제 통화에 사용된 총 시간(분)(Total call duration for international calls (minutes))</th> <th>10.0 → 10분 사용 (10.0 → 10 minutes)</th> </tr> <tr> <th>7</th> <th>Customer service calls</th> <th>고객 센터에 전화한 횟수 (Number of calls made to customer service)</th> <th>1 → 1회 전화 (1 → 1 call)</th> </tr> <tr> <th>8</th> <th>Churn</th> <th>고객 이탈 여부 (Whether the customer has churned)</th> <th>True (이탈 Churned), False (유지 Retained)</th> </tr> </table>
 
 ---
 
