@@ -1,4 +1,4 @@
-# Booribooribang Team
+# Booriboori Team
 
 ## Team Introduction
 <table>
