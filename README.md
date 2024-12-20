@@ -201,22 +201,22 @@ test_data = test_data.drop(columns=columns_to_drop, axis=1)
   </tr>
 </table>
 
-### 최종 모델 선정 과정
-이번 프로젝트에서는 XGBoost와 Random Forest 모델이 가장 높은 성능을 보였습니다. 각 모델의 주요 성능 지표를 비교한 결과 다음과 같은 결론을 도출했습니다.
+### Final Model Selection Process
+In this project, the XGBoost and Random Forest models demonstrated the highest performance. By comparing the key performance metrics of each model, the following conclusions were drawn:
 
-- Random Forest는 Precision에서 가장 높은 성능을 보였으나, Recall이 상대적으로 낮아 이탈 고객을 놓칠 가능성이 있었습니다.
+- Random Forest: Achieved the highest Precision, but its relatively low Recall indicated a higher likelihood of missing churn customers.
 
-- XGBoost는 Recall과 F1 Score에서 더 균형 잡힌 성능을 보였습니다. 특히 Recall이 Random Forest보다 높아 이탈 고객을 더 많이 예측하는 강점을 보였습니다.
+- XGBoost: Delivered more balanced performance in terms of Recall and F1 Score. Its higher Recall compared to Random Forest was particularly advantageous in predicting more churn customers.
 
-### 최종 모델 선정 (XGBoost 선택)
-1. 균형 잡힌 성능<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- Recall이 Random Forest보다 높아 이탈 고객을 더 많이 예측할 수 있습니다.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- F1 Score도 높은 수준을 유지하며 정확도와 재현율 간 균형을 이룹니다.<br>
-2. 과적합 방지<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- Random Forest는 Precision은 높았지만 과적합 경향이 보였습니다.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- XGBoost는 안정적이면서도 일반화 성능이 뛰어났습니다.<br>
-3. 해석 가능성<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- XGBoost를 통해 Feature Importance를 분석하면 이탈 요인을 명확히 파악할 수 있습니다.<br>
+### Final Model Selection (XGBoost Chosen)
+1. Balanced Performance
+- Recall is higher than Random Forest, allowing more churn customers to be predicted.
+- Maintains a high F1 Score, ensuring a balance between Precision and Recall.
+2. Overfitting Prevention
+- Random Forest showed high Precision but exhibited a tendency to overfit.
+- XGBoost demonstrated stable and superior generalization performance.
+3. Interpretability
+- XGBoost enables the analysis of Feature Importance, providing clear insights into the factors influencing customer churn.
 
 ---
 
@@ -241,37 +241,37 @@ test_data = test_data.drop(columns=columns_to_drop, axis=1)
 6. Evaluation
    <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/RNN_model_evaluation.png" alt="rnn_model_evaluation" width="1100px">
 
-### RNN 모델의 한계
-1. 성능 부족<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- 정확도(Accuracy)가 88.9%로 나쁘지 않지만, Recall이 43.2%로 매우 낮습니다.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- 이는 이탈 고객을 제대로 예측하지 못하는 한계가 있음을 의미합니다.<br>
-2. F1 Score<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- F1 Score가 0.526으로 낮아 Precision과 Recall의 균형이 부족합니다.<br>
-3. ROC-AUC<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- ROC-AUC 점수가 0.698로, 다른 머신러닝 모델(XGBoost, Random Forest)에 비해 식별 능력이 떨어집니다.<br>
+### Limitations of the RNN Model
+1. Performance Deficiency
+- While the Accuracy of 88.9% is decent, the Recall is extremely low at 43.2%.
+- This indicates a significant limitation in predicting churn customers effectively.
+2. F1 Score
+- The F1 Score is 0.526, highlighting a lack of balance between Precision and Recall.
+3. ROC-AUC
+- The ROC-AUC score is 0.698, showing inferior discriminative ability compared to other machine learning models such as XGBoost and Random Forest.
 
-### XGBoost와의 비교
-&nbsp;&nbsp;&nbsp;&nbsp;- XGBoost는 모든 성능 지표에서 RNN보다 우수한 결과를 보였습니다.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- 특히 Recall과 ROC-AUC에서 큰 차이를 보이며, 이탈 고객 예측에 더 효과적입니다.<br>
+### Comparison with XGBoost
+- XGBoost outperformed RNN across all performance metrics.
+- The most notable differences were in Recall and ROC-AUC, where XGBoost proved to be far more effective in predicting churn customers.
 
-RNN은 딥러닝 모델로 적용되었지만, 성능과 효율성 면에서 부족했습니다.
-따라서 XGBoost가 최종 모델로 선정되었습니다.
+Although RNN was applied as a deep learning model, it fell short in terms of performance and efficiency. 
+Therefore, XGBoost was selected as the final model.
 
 ---
 
-## 이탈 예측 모델 구현
-사용자는 다양한 머신러닝 모델을 선택하고, CSV 파일을 업로드하여 이탈 예측 결과를 확인할 수 있습니다.
+## Churn Prediction Model Implementation
+Users can select various machine learning models and upload a CSV file to check the churn prediction results.
 
-### 프로젝트 실행 과정
-1. CSV 파일 업로드<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- 예측할 데이터셋을 업로드 합니다.<br>
-2. 모델 선택<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- 사용자는 Decision Tree, Random Forest, XGBoost 등 다양한 모델 중 하나를 선택할 수 있습니다.<br>
-3. 이탈 예측 결과 확인<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- 예측된 고객 이탈률과 이탈 예상 고객 수를 확인할 수 있습니다.<br>
+### Project Execution Process
+1. CSV File Upload
+- Upload the dataset to be used for prediction.
+2. Model Selection
+- Users can choose from various models such as Decision Tree, Random Forest, or XGBoost.
+3. Review Prediction Results
+- Users can check the predicted churn rate and the number of customers likely to churn.
 
 <table> 
-  <tr> <td align="center"><b>CSV 파일 업로드</b></td> <td align="center"><b>모델 선택</b></td> <td align="center"><b>이탈 예측 결과</b></td> </tr> <tr> <td> <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/streamlit%2001.png" alt="Model Selection" width="300"> </td> <td> <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/streamlit%2002.png" alt="CSV File Upload" width="300"> </td> <td> <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/streamlit%2003.png" alt="Churn Prediction Results" width="300"> </td> </tr> 
+  <tr> <td align="center"><b>CSV File Upload</b></td> <td align="center"><b>Model Selection</b></td> <td align="center"><b>Churn Prediction Results</b></td> </tr> <tr> <td> <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/streamlit%2001.png" alt="Model Selection" width="300"> </td> <td> <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/streamlit%2002.png" alt="CSV File Upload" width="300"> </td> <td> <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/streamlit%2003.png" alt="Churn Prediction Results" width="300"> </td> </tr> 
 </table>
 
 --- 
