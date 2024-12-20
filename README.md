@@ -299,3 +299,7 @@ Users can select various machine learning models and upload a CSV file to check 
 ### Additional Features
 - Users can review detailed prediction results and analyze individual customer data.
 - The system allows users to print the prediction results for personal record-keeping or further analysis.
+
+---
+
+For the Korean version of this documentation, please refer to [README_ko.md](README_ko.md).
