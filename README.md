@@ -60,19 +60,19 @@ Our project focuses on building a customer churn prediction model for subscripti
 ## EDA
 ### Correlation Matrix
 ![download](https://github.com/user-attachments/assets/6f8277cb-c581-465d-b751-56b82aa42e2b)
-- Total day minutes, Customer service calls 등과 Churn 간의 상관관계가 두드러지게 나타남. 주간 통화 시간이 길수록 이탈률이 높아지는 패턴이 확인됨
-
+- A strong correlation is observed between features like Total Day Minutes and Customer Service Calls with Churn. It is confirmed that longer weekly call durations are associated with higher.
+  
 ### 주간 통화 이용률
 ![download](https://github.com/user-attachments/assets/0506510c-8f6c-4107-ad54-341797303ecf)
-- 낮 시간(Total day minutes) 동안 통화 시간이 많은 고객의 이탈률이 상대적으로 높게 나타남. 이는 통화량이 많을수록 불만족 요인이 발생할 가능성이 있음
-
+- Customers with higher call durations during the day (Total Day Minutes) show relatively higher churn rates. This suggests that higher call volumes may increase the likelihood of dissatisfaction.
+  
 ### 야간 통화 이용률
 ![download](https://github.com/user-attachments/assets/f3801354-610a-4863-8835-173f94369d2d)
-- 저녁 시간(Total eve minutes) 동안의 통화량은 이탈률과 상대적으로 낮은 상관관계를 보임
+- Call volume during the evening (Total Eve Minutes) shows a relatively low correlation with churn rates.
 
 ### 심야 통화 이용률
 ![download](https://github.com/user-attachments/assets/986f494c-42d6-4a46-9389-824cc258261a)
-- 야간 시간(Total night minutes)의 통화량은 고객 이탈과의 상관관계가 미미함
+- Call volume during the night (Total Night Minutes) shows minimal correlation with customer churn.
 
 ### 고객센터 상담 비율
 <table>
@@ -90,7 +90,7 @@ Our project focuses on building a customer churn prediction model for subscripti
   </tr>
 </table>
 
-- Customer service calls 횟수가 증가할수록 이탈 확률이 급격히 높아짐. 이는 고객 불만족과 문제 해결의 어려움을 반영함
+- As the number of Customer Service Calls increases, the probability of churn rises sharply, reflecting customer dissatisfaction and challenges in issue resolution.
 
 ### 국제전화 가입비율
 <table>
@@ -108,7 +108,7 @@ Our project focuses on building a customer churn prediction model for subscripti
   </tr>
 </table>
 
-- 국제전화 요금제에 가입한 고객의 이탈률이 더 높기 때문에, 요금제의 서비스 품질 개선 또는 고객 불만족 해소를 위한 전략이 필요함
+- Customers subscribed to international call plans exhibit higher churn rates, highlighting the need for strategies to improve service quality or address customer dissatisfaction.
 
 ### 음성사사함 가입비율
 <table>
@@ -126,21 +126,21 @@ Our project focuses on building a customer churn prediction model for subscripti
   </tr>
 </table>
 
-- Voice mail plan 미가입 고객의 이탈률이 상대적으로 높음. 음성사서함 요금제가 고객 유지에 기여할 가능성 존재
+- Customers without a Voice Mail Plan show relatively higher churn rates, suggesting the potential of voice mail plans to contribute to customer retention.
 
 ### 이탈률
 ![download](https://github.com/user-attachments/assets/aa611630-d6a6-473f-8955-8428e40611d2)
-- 전체 고객 중 이탈 고객의 비율이 낮지만, 특정 조건(높은 통화량, 고객센터 이용량)에서 집중적으로 이탈이 발생함
+- Although the overall churn rate among customers is low, churn occurs more frequently under specific conditions, such as high call volumes and increased customer service usage.
 
 ### 고객센터 통화량에 따른 이탈률 & 이상치
 ![churn_vs_customer_service_calls](https://github.com/user-attachments/assets/e491b51b-ce10-41ea-b632-9ded739fc8e7)
-- 고객센터에 5회 이상 전화를 한 고객은 이탈률이 현저히 높음. 이는 서비스 불만족이 주요 원인임을 나타냄
+- Customers who made more than five calls to customer service show significantly higher churn rates, indicating that service dissatisfaction is a major contributing factor.
 
 ### 통화량이 높은 고객들 대상 이탈률
 ![churn_vs_total_day_minutes](https://github.com/user-attachments/assets/9618780c-ebd7-4a49-8a94-511026fcb1cf)
-- 통화량이 비정상적으로 높은 고객군에서 이탈률이 급격히 상승함. 이러한 고객은 별도의 관리가 필요함
+- Customers with abnormally high call volumes experience a sharp increase in churn rates, indicating the need for targeted management for these individuals.
 
-### 데이터 전처리
+### Data Preprocessing
 <pre>
 <code>
 columns_to_drop = ['State', 'Area code']
@@ -204,9 +204,9 @@ test_data = test_data.drop(columns=columns_to_drop, axis=1)
 ### 최종 모델 선정 과정
 이번 프로젝트에서는 XGBoost와 Random Forest 모델이 가장 높은 성능을 보였습니다. 각 모델의 주요 성능 지표를 비교한 결과 다음과 같은 결론을 도출했습니다.
 
-&nbsp;&nbsp;&nbsp;&nbsp;- Random Forest는 Precision에서 가장 높은 성능을 보였으나, Recall이 상대적으로 낮아 이탈 고객을 놓칠 가능성이 있었습니다.
+&nbsp;&nbsp;&nbsp;&nbsp; - Random Forest는 Precision에서 가장 높은 성능을 보였으나, Recall이 상대적으로 낮아 이탈 고객을 놓칠 가능성이 있었습니다.
 
-&nbsp;&nbsp;&nbsp;&nbsp;- XGBoost는 Recall과 F1 Score에서 더 균형 잡힌 성능을 보였습니다. 특히 Recall이 Random Forest보다 높아 이탈 고객을 더 많이 예측하는 강점을 보였습니다.
+&nbsp;&nbsp;&nbsp;&nbsp; - XGBoost는 Recall과 F1 Score에서 더 균형 잡힌 성능을 보였습니다. 특히 Recall이 Random Forest보다 높아 이탈 고객을 더 많이 예측하는 강점을 보였습니다.
 
 ### 최종 모델 선정 (XGBoost 선택)
 1. 균형 잡힌 성능<br>
