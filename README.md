@@ -62,19 +62,19 @@ Our project focuses on building a customer churn prediction model for subscripti
 ![download](https://github.com/user-attachments/assets/6f8277cb-c581-465d-b751-56b82aa42e2b)
 - A strong correlation is observed between features like Total Day Minutes and Customer Service Calls with Churn. It is confirmed that longer weekly call durations are associated with higher.
   
-### 주간 통화 이용률
+### Weekly call usage rate
 ![download](https://github.com/user-attachments/assets/0506510c-8f6c-4107-ad54-341797303ecf)
 - Customers with higher call durations during the day (Total Day Minutes) show relatively higher churn rates. This suggests that higher call volumes may increase the likelihood of dissatisfaction.
   
-### 야간 통화 이용률
+### Nighttime call usage rate
 ![download](https://github.com/user-attachments/assets/f3801354-610a-4863-8835-173f94369d2d)
 - Call volume during the evening (Total Eve Minutes) shows a relatively low correlation with churn rates.
 
-### 심야 통화 이용률
+### Late-night call usage rate
 ![download](https://github.com/user-attachments/assets/986f494c-42d6-4a46-9389-824cc258261a)
 - Call volume during the night (Total Night Minutes) shows minimal correlation with customer churn.
 
-### 고객센터 상담 비율
+### Customer service consultation rate
 <table>
   <tr>
     <td align="center"><b>Distribution of Customer Service Calls</b></td>
@@ -92,7 +92,7 @@ Our project focuses on building a customer churn prediction model for subscripti
 
 - As the number of Customer Service Calls increases, the probability of churn rises sharply, reflecting customer dissatisfaction and challenges in issue resolution.
 
-### 국제전화 가입비율
+### International call subscription rate
 <table>
   <tr>
     <td align="center"><b>국제전화 분포</b></td>
@@ -110,7 +110,7 @@ Our project focuses on building a customer churn prediction model for subscripti
 
 - Customers subscribed to international call plans exhibit higher churn rates, highlighting the need for strategies to improve service quality or address customer dissatisfaction.
 
-### 음성사사함 가입비율
+### Voicemail subscription rate
 <table>
   <tr>
     <td align="center"><b>음성사서함 분포</b></td>
@@ -128,15 +128,15 @@ Our project focuses on building a customer churn prediction model for subscripti
 
 - Customers without a Voice Mail Plan show relatively higher churn rates, suggesting the potential of voice mail plans to contribute to customer retention.
 
-### 이탈률
+### Churn rate
 ![download](https://github.com/user-attachments/assets/aa611630-d6a6-473f-8955-8428e40611d2)
 - Although the overall churn rate among customers is low, churn occurs more frequently under specific conditions, such as high call volumes and increased customer service usage.
 
-### 고객센터 통화량에 따른 이탈률 & 이상치
+### Churn Rate Based on Customer Service Call Volume & Outliers
 ![churn_vs_customer_service_calls](https://github.com/user-attachments/assets/e491b51b-ce10-41ea-b632-9ded739fc8e7)
 - Customers who made more than five calls to customer service show significantly higher churn rates, indicating that service dissatisfaction is a major contributing factor.
 
-### 통화량이 높은 고객들 대상 이탈률
+### Churn Rate Among High Call Volume Customers
 ![churn_vs_total_day_minutes](https://github.com/user-attachments/assets/9618780c-ebd7-4a49-8a94-511026fcb1cf)
 - Customers with abnormally high call volumes experience a sharp increase in churn rates, indicating the need for targeted management for these individuals.
 
@@ -276,9 +276,26 @@ Users can select various machine learning models and upload a CSV file to check 
 
 --- 
 
-## 한 줄 회고
-- 김나예:
-- 김서진:
-- 나성호:
-- 서주혁:
-- 신동익:
+## Prediction Results Overview
+<table>
+  <tr>
+    <td align="center"><b>Customer Data Input Interface</b></td>
+    <td align="center"><b>Churn Prediction Result</b></td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/joohyeok-seo/SKN07-2nd-3Team/blob/main/images/Figure%201%20Customer%20data%20input%20interface.png" alt="Customer Data Input Interface" width="500">
+    </td>
+    <td>
+      <img src="https://github.com/joohyeok-seo/SKN07-2nd-3Team/blob/main/images/Figure%202%20Prediction%20result%20for%20customer%20churn.png" alt="Churn Prediction Result" width="500">
+    </td>
+  </tr>
+</table>
+
+- First Image: This image showcases the interface where users input customer data, such as state, account length, total day minutes, and customer service calls. These inputs are required to predict whether the customer is likely to churn.
+
+- Second Image: This image displays the prediction result. Based on the entered data, the system predicts whether the customer will churn or not. In this example, the result indicates that the customer will not churn.
+
+### Additional Features
+- Users can review detailed prediction results and analyze individual customer data.
+- The system allows users to print the prediction results for personal record-keeping or further analysis.
