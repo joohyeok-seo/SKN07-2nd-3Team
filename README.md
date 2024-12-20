@@ -78,14 +78,14 @@ Our project focuses on building a customer churn prediction model for subscripti
 <table>
   <tr>
     <td align="center"><b>Distribution of Customer Service Calls</b></td>
-    <td align="center"><b>Customer Service Calls별 Churn 비율</b></td>
+    <td align="center"><b>Churn Rate by Customer Service Calls</b></td>
   </tr>
   <tr>
     <td>
-      <img src="https://github.com/user-attachments/assets/1dac0981-380d-46f8-b8cc-7872f46c555c" alt="Distribution Graph" width="600">
+      <img src="https://github.com/user-attachments/assets/1dac0981-380d-46f8-b8cc-7872f46c555c" alt="Distribution of Customer Service Calls" width="600">
     </td>
     <td>
-      <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/curstomer_service_calls.png" alt="Churn Rate Graph" width="400">
+      <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/curstomer_service_calls.png" alt="Churn Rate by Customer Service Calls" width="400">
     </td>
   </tr>
 </table>
@@ -95,15 +95,15 @@ Our project focuses on building a customer churn prediction model for subscripti
 ### International call subscription rate
 <table>
   <tr>
-    <td align="center"><b>국제전화 분포</b></td>
-    <td align="center"><b>국제전화 가입별 Churn 비율</b></td>
+    <td align="center"><b>Distribution of International Calls</b></td>
+    <td align="center"><b>Churn Rate by International Call Subscription</b></td>
   </tr>
   <tr>
     <td>
-      <img src="https://github.com/user-attachments/assets/1db52c47-3d11-4d62-b159-37f264a24ee5" alt="Distribution Graph" width="500">
+      <img src="https://github.com/user-attachments/assets/1db52c47-3d11-4d62-b159-37f264a24ee5" alt="Distribution of International Calls" width="500">
     </td>
     <td>
-      <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/Subscribed.png" alt="Churn Rate Graph" width="500">
+      <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/Subscribed.png" alt="Churn Rate by International Call Subscription" width="500">
     </td>
   </tr>
 </table>
@@ -113,15 +113,15 @@ Our project focuses on building a customer churn prediction model for subscripti
 ### Voicemail subscription rate
 <table>
   <tr>
-    <td align="center"><b>음성사서함 분포</b></td>
-    <td align="center"><b>음성사서함 가입별 Churn 비율</b></td>
+    <td align="center"><b>Distribution of Voicemail Subscriptions</b></td>
+    <td align="center"><b>Churn Rate by Voicemail Subscription</b></td>
   </tr>
   <tr>
     <td>
-      <img src="https://github.com/user-attachments/assets/aa216f78-ad8d-4a0b-83d1-7b5d57e456bf" alt="Distribution Graph" width="500">
+      <img src="https://github.com/user-attachments/assets/aa216f78-ad8d-4a0b-83d1-7b5d57e456bf" alt="Distribution of Voicemail Subscriptions" width="500">
     </td>
     <td>
-      <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/voice_mail.png" alt="Churn Rate Graph" width="500">
+      <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/voice_mail.png" alt="Churn Rate by Voicemail Subscription" width="500">
     </td>
   </tr>
 </table>
