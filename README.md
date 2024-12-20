@@ -1,13 +1,13 @@
-# 부리부리방범대 (Booribooribang Team)
+# Booribooribang Team
 
-## 팀 소개 (Team Introduction)
+## Team Introduction
 <table>
   <tr>
-    <th>김나예</th>
-    <th>김서진</th>
-    <th>나성호</th>
-    <th>서주혁(Joohyeok)</th>
-    <th>신동익</th>
+    <th>Naye</th>
+    <th>Seojin</th>
+    <th>Seongho</th>
+    <th>Joohyeok</th>
+    <th>Dongik</th>
   </tr>
   <tr>
     <td><img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN07-2nd-3Team/blob/main/images/%EC%9D%B8%ED%98%95.png" width="175" height="175"></td>
@@ -27,43 +27,33 @@
 
 ---
 
-## 프로젝트 소개 (Project Overview)<BR>
-고객 이탈률 예측은 고객 경험을 개선하고 경쟁력을 높이는 데 중요한 역할을 합니다. 예측 모델을 통해 고객의 불만이나 불편을 사전에 파악하고 이를 해결함으로써 고객 만족도를 향상시킬 수 있습니다. 또한, 이탈률을 예측함으로써 경쟁사보다 더 나은 서비스를 제공하고, 고객 충성도를 유지하며, 장기적인 성장을 이끌어낼 수 있습니다.<BR>
-우리는 구독 기반 서비스 기업, 전자상거래 기업, 금융 서비스 기업 등 서비스 제공 기업을 위한 **고객 이탈률 예측 모델**을 구축했습니다. 이를 통해 기업은 이탈 대응 전략을 수립하고, 서비스 개선안을 도출하여 더 효율적인 고객 관리와 경쟁력 있는 시장 전략을 마련할 수 있습니다.
-
+## Project Overview
 Customer churn prediction plays a crucial role in improving customer experience and enhancing competitiveness. Predictive models can identify customer dissatisfaction or concerns in advance, enabling companies to address these issues proactively. This approach not only increases customer satisfaction but also provides better services than competitors, maintaining customer loyalty and ensuring long-term business growth.
 Our project focuses on building a customer churn prediction model for subscription-based businesses, e-commerce platforms, financial services companies, and other service providers. Through this model, companies can devise strategies to reduce churn, improve customer management efficiency, and establish competitive market strategies.
 
-### 프로젝트명 (Project Title)
-**이탈방지 대작전!!!**
+### Project Title
 **Customer Churn Defense Strategy!!!**
 
-### 개요 (Overview)
-#### 가입 고객 이탈 예측 모델 설계 및 구축 (Design and Construction of a Customer Churn Prediction Model)
-<br>
+### Overview
+#### Design and Construction of a Customer Churn Prediction Model
 
-**1. 훈련·테스트 데이터 선정 Selection of Training and Test Data**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- 결측치가 적고 불필요한 feature가 적은 데이터를 선정해 모델 학습<br>
+**1. Selection of Training and Test Data**
 - Selected data with minimal noise and fewer unnecessary features to train the model effectively.
 
-**2. ML 성능 비교 Comparison of ML Performance**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- ML 알고리즘 5개를 선정해 동일한 데이터로 성능 비교 후, 가장 성능이 좋은 알고리즘을 채택 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;- Kaggle 머신러닝 웹 커뮤니티의 **Telecom Churn Dataset** 채택<br>
+**2. Comparison of ML Performance**
 - Compared the performance of five machine learning algorithms using a consistent dataset, selecting the algorithm with the best performance.
 - Used the Telecom Churn Dataset from the Kaggle machine learning community.
 
-**3. 예측 모델 설계·구축 Design and Construction of the Prediction Model**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- 채택한 알고리즘으로 ML 모델 설계 및 구축하여 성능 검증<br>
+**3. Design and Construction of the Prediction Model**
 - Constructed and validated the model using the selected algorithm for maximum performance.
 
-### 목표 (Objective)
-여러 머신러닝 모델의 비교, 분석을 통해 고객 이탈 예측에 가장 적합한 고성능 모델을 구축합니다.
+### Objective
 - To build an optimized and high-performing customer churn prediction model through the comparison and analysis of various machine learning models.
 
 ---
 
-## 주요 데이터 설명
-<table> <tr> <th>Number</th> <th>Column</th> <th>Meaning</th> <th>Example</th> </tr> <tr> <th>1</th> <th>State</th> <th>고객이 거주하는 주 (The state where the customer resides)</th> <th>CA" (California), "NY" (New York)</th> </tr> <tr> <th>2</th> <th>International plan</th> <th>국제 전화 요금제 가입 여부 (Whether the customer has subscribed to an international calling plan)</th> <th>"Yes" (가입 Subscribed), "No" (미가입 Not subscribed)</th> </tr> <tr> <th>3</th> <th>Voice mail plan</th> <th>음성사서함 요금제 가입 여부 (Whether the customer has subscribed to a voicemail plan)</th> <th>"Yes" (가입 Subscribed), "No" (미가입 Not subscribed)</th> </tr> <tr> <th>4</th> <th>Total day minutes</th> <th>주간(낮 시간) 동안 사용한 총 통화 시간(분) (Total call duration during daytime (minutes))</th> <th>265.1 → 265.1분 통화 (265.1 → 265.1 minutes)</th> </tr> <tr> <th>5</th> <th>Total eve minutes</th> <th>저녁 시간 동안 사용한 총 통화 시간(분) (Total call duration during evening hours (minutes))</th> <th>197.4 → 197.4분 통화 (197.4 → 197.4 minutes)</th> </tr> <tr> <th>6</th> <th>Total intl minutes</th> <th>국제 통화에 사용된 총 시간(분)(Total call duration for international calls (minutes))</th> <th>10.0 → 10분 사용 (10.0 → 10 minutes)</th> </tr> <tr> <th>7</th> <th>Customer service calls</th> <th>고객 센터에 전화한 횟수 (Number of calls made to customer service)</th> <th>1 → 1회 전화 (1 → 1 call)</th> </tr> <tr> <th>8</th> <th>Churn</th> <th>고객 이탈 여부 (Whether the customer has churned)</th> <th>True (이탈 Churned), False (유지 Retained)</th> </tr> </table>
+## Key Data Description
+<table> <tr> <th>Number</th> <th>Column</th> <th>Meaning</th> <th>Example</th> </tr> <tr> <th>1</th> <th>State</th> <th>The state where the customer resides</th> <th>CA" (California), "NY" (New York)</th> </tr> <tr> <th>2</th> <th>International plan</th> <th>Whether the customer has subscribed to an international calling plan</th> <th>"Yes" (Subscribed), "No" (Not subscribed)</th> </tr> <tr> <th>3</th> <th>Voice mail plan</th> <th>Whether the customer has subscribed to a voicemail plan</th> <th>"Yes" (Subscribed), "No" (Not subscribed)</th> </tr> <tr> <th>4</th> <th>Total day minutes</th> <th>Total call duration during daytime (minutes)</th> <th>265.1 → 265.1 minutes</th> </tr> <tr> <th>5</th> <th>Total eve minutes</th> <th>Total call duration during evening hours (minutes)</th> <th>197.4 → 197.4 minutes</th> </tr> <tr> <th>6</th> <th>Total intl minutes</th> <th>Total call duration for international calls (minutes)</th> <th>10.0 → 10 minutes</th> </tr> <tr> <th>7</th> <th>Customer service calls</th> <th>Number of calls made to customer service</th> <th>1 → 1 call</th> </tr> <tr> <th>8</th> <th>Churn</th> <th>Whether the customer has churned</th> <th>True (Churned), False (Retained)</th> </tr> </table>
 
 ---
 
